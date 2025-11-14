@@ -1,7 +1,12 @@
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 
-const csvFolder = path.join(__dirname, "letters/c");
+const csvFolder = path.join(
+  __dirname,
+  "letters/",
+  process.env.CURRENT_LETTER.toLowerCase()
+);
 const outputCsv = path.join(csvFolder, "joined.csv");
 
 function getCsvFiles(folder) {

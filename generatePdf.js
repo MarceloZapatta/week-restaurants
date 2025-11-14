@@ -3,10 +3,9 @@
 // 2. For each restaurant, fetch metadata (image, description) from the link
 // 3. Render report.html with Handlebars, passing restaurants with metadata
 // 4. Output HTML (PDF generation can be added if needed)
-
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
-const { execSync } = require("child_process");
 const { parse } = require("csv-parse/sync");
 const fetch = require("node-fetch");
 const Handlebars = require("handlebars");
@@ -15,8 +14,11 @@ const metascraper = require("metascraper")([
   require("metascraper-description")(),
 ]);
 
-const CURRENT_LETTER = "E";
-const csvPath = path.join(__dirname, "serapi-a.csv");
+const CURRENT_LETTER = process.env.CURRENT_LETTER.toUpperCase();
+const csvPath = path.join(
+  __dirname,
+  `letters/${CURRENT_LETTER.toLowerCase()}/joined.csv`
+);
 const htmlTemplatePath = path.join(__dirname, "report.html");
 
 async function getMetadata(url) {

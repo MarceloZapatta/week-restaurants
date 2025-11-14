@@ -1,13 +1,9 @@
+require("dotenv").config();
+
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-const CURRENT_LETTER = "e";
-
-const LANCHONETE_OUTPUT_CSV = "serapi-lanchonete.csv";
-const BAR_OUTPUT_CSV = "serapi-bar.csv";
-const RESTAURANTE_OUTPUT_CSV = "serapi-restaurante.csv";
-const CAFE_OUTPUT_CSV = "serapi-cafe.csv";
-const PIZZARIA_OUTPUT_CSV = "serapi-pizzaria.csv";
+const CURRENT_LETTER = process.env.CURRENT_LETTER.toLowerCase();
 
 const BASE_URL = "https://serpapi.com/search.json?engine=google_maps&q= ";
 const END_URL = `*&ll=@-23.4900044,-47.4527187,13.51z&type=search&gl=br&hl=pt-br&lr=lang_pt&num=1000&api_key=${process.env.SERAPI_KEY}`;
@@ -79,6 +75,12 @@ async function main() {
     for (const r of results) {
       lines.push(toCsvRow(r));
     }
+
+    const folderPath = `letters/${CURRENT_LETTER}`;
+    if (!fs.existsSync(folderPath)) {
+      fs.mkdirSync(folderPath, { recursive: true });
+    }
+
     fs.writeFileSync(
       `letters/${CURRENT_LETTER}/serapi-${type}.csv`,
       lines.join("\n"),
