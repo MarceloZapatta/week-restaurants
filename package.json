@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "handlebars": "^4.7.8",
+    "metascraper": "^5.49.4",
+    "metascraper-description": "^5.49.2",
+    "metascraper-image": "^5.49.2",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.22.3"
+  }
+}

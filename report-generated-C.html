@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes da semana C</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.restaurant-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.restaurant-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #f3f3f3;
+        border-radius: 6px;
+        padding: 12px;
+      }
+      ul.restaurant-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+        max-height: 277px;
+      }
+      ul.restaurant-list .restaurant-name {
+        font-size: 1.2em;
+        color: #222;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.restaurant-list .restaurant-container {
+        width: 130%;
+      }
+
+      ul.restaurant-list .restaurant-container span {
+        padding: 5px;
+      }
+
+      .toggle-hours-btn {
+        margin: 8px 0 8px 0;
+        padding: 7px 22px;
+        font-size: 1em;
+        background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        outline: none;
+      }
+      .toggle-hours-btn:hover,
+      .toggle-hours-btn:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+        color: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurantes da semana!<br />Letra: 'C'</h1>
+      <ul class="restaurant-list">
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJZUonwyBgz5QRll3QV4C2XMg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nocyLGQJjFWarZbGUuNUJ7Nie0SJsEKRVvjSoazV3W5MY13BRFl647y6ucdIevarKxlpgU3XxNINnzJza4bEmwd4bG7yoKEMnh5hJclNJJ91nVYJuk9o4PP-DZMARl1JZPshb_Cjg&#x3D;w900-h900-p-k-no" alt="Bar do Cabo logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Cabo</b>
+                <small>4.7 ⭐ (30 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Pereira da Rocha, 164 - Vila Hortência, Sorocaba - SP, 18020-050, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bares</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ902uk0H1xZQRAd9EyK5bmzo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;i2wZ0s1jsobCULUC4GMGDA&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;134.44273&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Bar Do Cafuringa logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar Do Cafuringa</b>
+                <small>3.9 ⭐ (14 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Antônio Furtado Lopes, 328 - Vila Mineirao, Sorocaba - SP, 18076-480, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJIY4jtRX1xZQRI_8vNd0Bwk4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNQ88ZWyhtD0dqFILFTbngCVoT1Yw2pC4J1B5Br&#x3D;w900-h900-p-k-no" alt="Bar do Calango Serra Talhada logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Calango Serra Talhada</b>
+                <small>4.5 ⭐ (123 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Tótora, 880 - Central Parque Sorocaba, Sorocaba - SP, 18051-005, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cervejaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJE5FbQCFgz5QRX3WNjo78rDQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np5oXyIDLmtpH7ZV1aVrg4aTD2QizjwQeTDSPCtziGMkYBvljWvVdzkIG4qJuAb4cxYHR6PZwaxlHai-6k0jc-W5GrlY9ff_-5d0sqv21_DQgyWMTWf52EHexgTI7K1bhOmLrTD&#x3D;w900-h900-p-k-no" alt="Bar do Carlão logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Carlão</b>
+                <small>4.2 ⭐ (13 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Teodoro Kaisel, 14 - Vila Hortência, Sorocaba - SP, 18020-268, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Bares</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJQ46AHkb1xZQRpjL8tTzWk4k" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrdFL83ZT9oqigpTOjCSSIOrcoRDGaGusxh7yzI-4nNgqRHDG5HrwHHtzIbpqxujpHcCRzv1y2TS5qcNgWxnekM_VF3uDugyl_BunPyvzg0rj0tPsEytJjwlRZjMaHBtKszPLsaFQ&#x3D;w900-h900-p-k-no" alt="BAR DO CARLINHOS logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>BAR DO CARLINHOS</b>
+                <small>4.7 ⭐ (391 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Silva Barros, 225 - Vila Fiori, Sorocaba - SP, 18075-570, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: 9:30 AM–10:30 PM<br />
+                Seg: 5–11:30 PM<br />
+                Ter: 5–11:30 PM<br />
+                Qua: 5–11:30 PM<br />
+                Qui: 5–11:30 PM<br />
+                Sex: 5–11:30 PM<br />
+                Sab: 9:30 AM–11:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJObvwm3CLxZQRwx291aJvWXo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMkhiZIUcEQfZ4KxUqnjzzFuiPrmMz3luj9bJHa&#x3D;w900-h900-p-k-no" alt="C.Q. SABE BOTEQUIM E RESTAURANTE logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>C.Q. SABE BOTEQUIM E RESTAURANTE</b>
+                <small>4.6 ⭐ (97 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Cap. Grandino, 474 - Jardim Paulistano, Sorocaba - SP, 18040-560, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar e Grill</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJY_qx6AmLxZQRxr5d9M2fKNQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMOft6YsUSLL9XUD-xYu0lMLxMBD2n1ZRX2CtgF&#x3D;w900-h900-p-k-no" alt="CABEÇÃO LANCHES 1 logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>CABEÇÃO LANCHES 1</b>
+                <small>4.7 ⭐ (17 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Pres. Juscelino Kubitscheck de Oliveira, 582 - Centro, Sorocaba - SP, 18035-060, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJjV8JNjGLxZQRi6XgjypLwwQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPuFF8VwDwRrZlBroXlBtLYrAU19rBZm03ch_wp&#x3D;w900-h900-p-k-no" alt="Cabô Café logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cabô Café</b>
+                <small>4.9 ⭐ (59 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Euclídes da Cunha, 108 - Vila Independencia, Sorocaba - SP, 18040-330, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ15o0dUv1xZQRB4CTZ7kD--Q" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np5BEL44YkVq6aP2Ri-pu61j3Wqbte8LZO0sLdDd7vtvxWbVnRcW3ApAJjYIorc6fxpetrhYrc5RR_t4st0x-iy5fp3hAbs0YDu_Ncw7PLskH78b5gr9HCmFLE1uRLhavUp9DYd&#x3D;w900-h900-p-k-no" alt="Cabral Pizzaria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cabral Pizzaria</b>
+                <small>4.7 ⭐ (33 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Maurício Garcia Vieira, 78 - Vila Santana, Sorocaba - SP, 18080-380, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJq6oegjSLxZQRZTVB78k6AJk" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npKjynzt8Y3RVVOFNO70jqFPU0R0Vq8E10a96m3_64ABI8oTuL2xebwEhwvFTcl_6HWOj1bMoZ0EXwApY03JYyvoJXNY9F20pxUuXBEedlAO3UCt_XDxv_BpkAid1YNR87jrQHv&#x3D;w900-h900-p-k-no-pi-8.035767-ya39.598984-ro-2.6992676-fo100" alt="Cafe Condá logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cafe Condá</b>
+                <small>4.1 ⭐ (14 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Américo Figueiredo, 1939 - Jardim Simus, Sorocaba - SP, 18055-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJn_Qw0a2LxZQRTgS8uLrrkfQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrOd1gLSHTxkJJ9dYZkwoKuNtM2NRpvwTVTVduNg_kPmGVPYX9IVTJzCF2MHbqHc-EeaI86n2fk0KoN7yo31FdIEKStnf8yG_sy0M1Xl9oXvYeuCUgX_VF7feuYkOr_IgNAzcJD&#x3D;w900-h900-p-k-no" alt="Café do criar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Café do criar</b>
+                <small>5 ⭐ (42 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Braz Laino, 45 - Jardim Emilia, Sorocaba - SP, 18031-030, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+               
+              <span class="restaurant-website">🌐 https://cafedocriar.criarcoworking.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJWy_O8Pv0xZQRJL3P7UeAFUU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noej4Oa6RAD9yL0JhIwZmZjewWwX6fKNXd96BWPOVs7Xsa36a6pm2Ht8V7QeH8M0gkJ3MbMq5LMohXslxY0gzAgz2eQH_KkPVp3o97igm9PrAQut0fnvKqvxIKZkZdrgTnAA6MpkA&#x3D;w900-h900-p-k-no" alt="Cafeteria Ca&quot;Fe&quot; logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cafeteria Ca&quot;Fe&quot;</b>
+                <small>4.3 ⭐ (12 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paschoal Augusto Verlangieri, 365 - Jardim Novo Horizonte, Sorocaba - SP, 18071-795, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJc9wo_tH1xZQRaIwVSP0LZHE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNWPKoP3dyra1ppexTN_4oROxvJL9WemSve7HxM&#x3D;w900-h900-p-k-no" alt="Cafeteria Café com Leitura logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cafeteria Café com Leitura</b>
+                <small>4.9 ⭐ (17 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Escolástica Rosa de Almeida, 998 - Vila Carvalho, Sorocaba - SP, 18060-110, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJV749GQCLxZQRcEX0d6OurNM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNsykEmI3yk7ttjlA4X2MA3aq715U5dywrquUWx&#x3D;w900-h900-p-k-no" alt="Cafézin Cafeteria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cafézin Cafeteria</b>
+                <small>5 ⭐ (33 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Américo Figueiredo, 116 - Jardim Simus, Sorocaba - SP, 18055-131, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJceetwlj1xZQR-UEVu8yTsfg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqyrLcdj7NsqG7VKWL4QinDaR9PPkbLoHlRLDY-ECGvVOXNVdsibB4QxG0tUjjuJErzK79_FFcrkYtAUN0QjWCKl6Hey5yQ4_4Do-bmbhknUKMj_bSCb0eiAVsgj0c-Qi9A2m6J&#x3D;w900-h900-p-k-no" alt="Cafezuras logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cafezuras</b>
+                <small>4.9 ⭐ (13 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Valdomiro Ferraresi, 236, Sorocaba - SP, 18055-861, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJR1gyHgGLxZQRHRKFpUNSDrw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqgUM1PSFjT2JT1dqQsw5lp2ZM8iXLfmTPh-fbxkZ3ym4hxoZ_GxL3-Bf54f-ya1lvjSc7iQunzvyfWOGoaSQQoMNguQDMiRZhSnSB9wyBEDBiXvRZ5wVNgsom7WlEFJg_JlNZLUQ&#x3D;w900-h900-p-k-no" alt="Caffeine cafe e bistro logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Caffeine cafe e bistro</b>
+                <small>5 ⭐ (3 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Brg. Tobias, 73 - Centro, Sorocaba - SP, 18010-250, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJT0vbQa2LxZQRuLn4znNqG70" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrCTY_GORm8HxulpL95fZWjGryXWa9Eb8fi17CacBw43A6b6rBJzJGROaO1YiMEqLV_wi_5VNurzkrrYsPCB71lQJmjnF2PJJss4aMnSrd3ZU2Bwa_yz0RSI-3mS8xEXAPZ6SER8g0tYitd&#x3D;w900-h900-p-k-no" alt="Cahon Cafeteria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cahon Cafeteria</b>
+                <small>4.8 ⭐ (26 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Antônio Carlos Comitre, 140 - Jardim Portal da Colina, Sorocaba - SP, 18047-620, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJtx99j-iLxZQRxJqzQw_IumE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP1RwfvtRKXbUgE-jpLOXQ-mx3dXUXLCeHR92R3&#x3D;w900-h900-p-k-no" alt="Calico Café Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Calico Café Bar</b>
+                <small>4.6 ⭐ (48 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Eulália Silva, 69 - Jardim Faculdade, Sorocaba - SP, 18030-230, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/calicocafebar/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 9 AM–6 PM<br />
+                Ter: 9 AM–6 PM<br />
+                Qua: 5 PM–12 AM<br />
+                Qui: 5 PM–12 AM<br />
+                Sex: 5 PM–12 AM<br />
+                Sab: 4 PM–12 AM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJx30W9xKLxZQRbkM54IJ8gz4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;W-CZHFgS_WRp97Qt_H5AQA&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;272.08716&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Camomila Café logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Camomila Café</b>
+                <small>4.9 ⭐ (9 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Alcides Pegoretti, 51 - B - Jardim Guadalajara, Sorocaba - SP, 18045-660, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJR8SoeaqKxZQRntLsDAI0IUo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMLudsykC7RjBSSYl5yl0K8r0qsRpmoONnxmYGy&#x3D;w900-h900-p-k-no" alt="Cantina Tutto Bene logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cantina Tutto Bene</b>
+                <small>4.3 ⭐ (1771 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Aparecida, 1243 - Jardim Santa Rosália, Sorocaba - SP, 18095-000, Brazil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.cantinatuttobene.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: 11 AM–4 PM<br />
+                Seg: Closed<br />
+                Ter: 11 AM–3 PM, 6–10 PM<br />
+                Qua: 11 AM–3 PM, 6–10 PM<br />
+                Qui: 11 AM–3 PM, 6–10 PM<br />
+                Sex: 11 AM–3 PM, 6–11 PM<br />
+                Sab: 11 AM–3 PM, 6–11 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ__j9TTBgz5QRvDRsT0gWC4o" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNxCsQhW5AAuei07ZVrO0o3gIjJqr33egTDLSkE&#x3D;w900-h900-p-k-no" alt="Cantinho da Comida Caseira logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cantinho da Comida Caseira</b>
+                <small>4.4 ⭐ (435 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Prof. Luís de Campos, 140 - Vila Hortência, Sorocaba - SP, 18020-276, Brazil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 10 AM–4:30 PM<br />
+                Ter: 10 AM–4:30 PM<br />
+                Qua: 10 AM–4:30 PM<br />
+                Qui: 10 AM–4:30 PM<br />
+                Sex: 10 AM–4:30 PM<br />
+                Sab: 10 AM–4:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJIWnODA71xZQRXWMlGWSVmKk" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPQmN8ch9heHDgqiAAFnQMwHMmitlgifZtr0t_f&#x3D;w900-h900-p-k-no" alt="CANTINHO DA PIZZA SOROCABA logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>CANTINHO DA PIZZA SOROCABA</b>
+                <small>4.9 ⭐ (70 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Itavuvu, 1178 - Jardim Maria Antônia Prado, Sorocaba - SP, 18076-005, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 http://cantinhodapizzasorocaba.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJCaLsnC6LxZQRMOd_dCf5mTk" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;pI28HGPIGc9Kte2cNXDTnw&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;138.14691&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Cantinho Do Sonho logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cantinho Do Sonho</b>
+                <small>5 ⭐ (8 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Al. das Camélias, 402 - Jardim Simus, Sorocaba - SP, 18055-185, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJP6_ac_Ffz5QRUK7S_qhywFA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPRB0sNhubEAfptFqqFvhzjk-GrRa4Z9cz1yF1Y&#x3D;w900-h900-p-k-no" alt="Careca Lanches/ Lanches em Sorocaba/ Comida caseira ‍ logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Careca Lanches/ Lanches em Sorocaba/ Comida caseira ‍</b>
+                <small>4.5 ⭐ (124 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Rita de Carvalho Monteiro, 51 - Retiro São João, Sorocaba - SP, 18085-750, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJpbX-nNRhz5QRgtAaUTrQkkw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npIzjxU3_xeBJL0obKjaPjBpWWOKMCPrc5r5vjP_2fKEdXlhk5X9TfbT69MGrwpKvjsuRiqtzbo3f0avEhRqgbc9aV0Y0hNeAPN2pwAzL5As5aG9sctljtEylX4JJqHXl3KFMklTQ&#x3D;w900-h900-p-k-no" alt="Carlinhos Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Carlinhos Lanches</b>
+                <small>4.5 ⭐ (105 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Venezuela, 200 - Vila Barcelona, Sorocaba - SP, 18025-190, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJDwbDGQ5hz5QRP4yavJOLfc4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNnCDA0Va_MX3Ji7CQoE4_uIXHl049pVy2wGzuD&#x3D;w900-h900-p-k-no" alt="Casa Brasile Bar e Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Casa Brasile Bar e Restaurante</b>
+                <small>4.1 ⭐ (82 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. José Aleixo Irmão, 27 - A - Residencial Vilaazul 2, Sorocaba - SP, 18087-571, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://linktr.ee/casabrasile</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJBSOrb4D1xZQRrSUWXPmFNVw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipM-1vMY7n0bfURXKEMs20RZZqoXDodySTR1-W-j&#x3D;w900-h900-p-k-no" alt="CASA CAFÉ logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>CASA CAFÉ</b>
+                <small>4.8 ⭐ (247 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Paulo Emanuel de Almeida, 100 - Wanel Ville, Sorocaba - SP, 18053-505, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/casacafe100/?igshid&#x3D;YmMyMTA2M2Y%3D</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJXcizGpVhz5QRKVH7xI9b_HI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMwKDI3rT1FcZh1KevDU1wDgOignyc3PDIDLxFd&#x3D;w900-h900-p-k-no" alt="Casa de lanche Góes logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Casa de lanche Góes</b>
+                <small>4.3 ⭐ (31 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Ramon Haro Martini, 963 - Parque Tres Meninos, Sorocaba - SP, 18015-140, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJMeIOxjKLxZQR_TemMGKqUlc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMDswuQgIa9MdtaTDqbAtNAtu9nLX3BNSScasnM&#x3D;w900-h900-p-k-no" alt="Casa Rural - Pizza Napoletana Moderna logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Casa Rural - Pizza Napoletana Moderna</b>
+                <small>4.9 ⭐ (234 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Mesquita Sobrinho, 87 - Jardim Vergueiro, Sorocaba - SP, 18030-125, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.ruralpizzeria.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJYQPCWQCLxZQR5fpr6XB1v0s" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nresobkgwuwqj2YZ70T1j-tQujPjJFLPaRQg6hP8sV8X3ZmdTYnbp5fgCy4aVLMITfMu9IurQc-UYbCgB-YgL4zDUFWNCOcBpgwBtwjCJoVaSo5tj1xzayvFqpM3XMI01FDq6GRTZ0N_RQ4&#x3D;w900-h900-p-k-no" alt="Casa Vólia logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Casa Vólia</b>
+                <small>4.9 ⭐ (93 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. João Ramalho, 75 - Vila Independencia, Sorocaba - SP, 18040-310, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/casa.volia</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJqS_keABhz5QRMmLtEnnBvf0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP3CRh_sdlQ7XBoevnw5c_1K9qqYp5Zf8Ed8bI&#x3D;w900-h900-p-k-no" alt="Casa Zoë cafeteria saudável logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Casa Zoë cafeteria saudável</b>
+                <small>5 ⭐ (3 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Alameda Jundiaí, 33 - Jardim Saira, Sorocaba - SP, 18085-090, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ-d7L6x-LxZQRa8xE65wwu74" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;BCBNwNPxSZlhg3HwOxm8OQ&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;40.781445&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="CATATAU LANCHES logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>CATATAU LANCHES</b>
+                <small>5 ⭐ (15 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Canadá, 85 - Vila Barcelona, Sorocaba - SP, 18025-750, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJW7z67Y6LxZQRExezj_KgdPw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqUbWcATmdr6Pr1PsyauA4ElgYFwi-OU6rQAeRSa0vMt03ygSCK-iGD80EVI9tDjNpfxCb9FaZtw10bEhAapkmOloK6oBVl0fPzvpCVmJgrPRiafPvaScC7AitGPGW5rSig7FMMFA&#x3D;w900-h900-p-k-no" alt="Catedral Bistrô Café logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Catedral Bistrô Café</b>
+                <small>4.1 ⭐ (77 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. São Bento, 76 - Centro, Sorocaba - SP, 18010-030, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJKwFLK72KxZQRhL7Hjprzy4A" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np2MZzLQCwRYC6CaTmbpvqdnMR36jpsrbU_ei2FbrPuP1NBdPpe7ay3frp3UlSLW6N-VDZYGPrFBI4QzUF8hByt-INTEdLs678acF9jt3corYdOVT5aqtz-QHVii7-njDLimR5A&#x3D;w900-h900-p-k-no" alt="Cattani Restaurante e Cafeteria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cattani Restaurante e Cafeteria</b>
+                <small>4.1 ⭐ (149 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. São Bento, 284 - Centro, Sorocaba - SP, 18010-031, Brazil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 8 AM–6 PM<br />
+                Ter: 8 AM–6 PM<br />
+                Qua: 8 AM–6 PM<br />
+                Qui: 8 AM–6 PM<br />
+                Sex: 8 AM–6 PM<br />
+                Sab: 8 AM–3 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJFf_TotSKxZQRUwQD9e8w_YM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPm9uLhnVaIZpgFQ-YO32YOC8LFYyILoEIOh05f&#x3D;w900-h900-p-k-no" alt="Caxote BAR logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Caxote BAR</b>
+                <small>4.5 ⭐ (37 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Percito de Sousa Queiroz, 451 - Vila Barao, Sorocaba - SP, 18061-190, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJk7JABQX1xZQRDKC0AYO-Hz8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNht2JjxbdUedA6vX0tc7bQUwaRuAyCCIg-zqub&#x3D;w900-h900-p-k-no" alt="Cedrinho Lanches salgados e açai logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cedrinho Lanches salgados e açai</b>
+                <small>4.6 ⭐ (33 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Abílio de Figueiredo, 80 - casa 2 - Vila Teodolinda, Sorocaba - SP, 18074-250, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJLc7mTZOLxZQRwj-pEvSvMzo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOmvf7ADQdYnucXugxXbNfTYOZOeC5a4O_C72PV&#x3D;w900-h900-p-k-no" alt="Central Pizza logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Central Pizza</b>
+                <small>4.5 ⭐ (165 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 D&#x27;Ávila, R. Valter Luís D Ávila, 239 - Central parque, Sorocaba - SP, 18051-180, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Delivery de Pizza</span><br />
+               
+              <span class="restaurant-website">🌐 https://pedir.delivery/centralpizza</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ6TM04vaLxZQR20Qhrl3xkQQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOQDQIIVkAiSHgeGMAcRCeG-rEIZT6CBf5KECOb&#x3D;w900-h900-p-k-no" alt="Certosa Pizzaria Artesanal logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Certosa Pizzaria Artesanal</b>
+                <small>4.5 ⭐ (577 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Euclídes da Cunha, 49 - Vila Independencia, Sorocaba - SP, 18040-330, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/certosapizzaria/?hl&#x3D;pt-br</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJsykko-9fz5QRwvpkz67wimA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN_Hwy1AHPCYd4wOz_qtq6L4DZ-HTa8Ignc9-h8&#x3D;w900-h900-p-k-no" alt="Cestas Leila Barcelli logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cestas Leila Barcelli</b>
+                <small>5 ⭐ (46 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Alameda Santos, 56 - Jardim Saira, Sorocaba - SP, 18085-190, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Loja de cestas de presente</span><br />
+               
+              <span class="restaurant-website">🌐 https://delicious-barcelli-1.goomer.app/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ6QAXQ2hgz5QRa0FftfK9jCo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNPHpiIN5-9OxWyqxujhaIswTU10JipirfvWs8h&#x3D;w900-h900-p-k-no" alt="Chácara Santa Victória logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Chácara Santa Victória</b>
+                <small>4.7 ⭐ (2286 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. São Paulo, 3445 - Vila Sao Domingos, Sorocaba - SP, 18013-004, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante self-service</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: 12–4 PM<br />
+                Seg: Closed<br />
+                Ter: 12–3 PM<br />
+                Qua: 12–3 PM<br />
+                Qui: 12–3 PM<br />
+                Sex: 12–3 PM<br />
+                Sab: 12–4 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJGQ2W6LuKxZQRumzPAxtIrm4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noALO657SFCuDAKR9Ka8399pgU7Y65cKlpxGyK-OdLwX1MShz-hSz7W4FCMVafzxs6Xeu1MmXDF8xRu5N-WNKJsf3B3FWN-w-GBKFWd-oWWQxHq18Fqv4mlCJkJ5th7kFf-IrIuPQ&#x3D;w900-h900-p-k-no" alt="Charles Bar e Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Charles Bar e Restaurante</b>
+                <small>4.7 ⭐ (73 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Manoel José da Fonseca, 352 - Centro, Sorocaba - SP, 18035-070, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 9 AM–2:30 PM<br />
+                Ter: 9 AM–2:30 PM, 5–11 PM<br />
+                Qua: 9 AM–2:30 PM, 5–11 PM<br />
+                Qui: 9 AM–2:30 PM, 5–11 PM<br />
+                Sex: 9 AM–2:30 PM, 5–11 PM<br />
+                Sab: 9 AM–2:30 PM, 5–11 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ7f7mYgD1xZQRkS_S-nD--OA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqqAmtw2mB2jOM-T0OrE3okxAIoKoiGwyZyrX7nRUzSD5U6gQBXoV1ODA76nysTINUhU4qCquEZwiTh1DSOmLxDxY3BwTtonpixqCjzBaLqoprE1ItZbwh0F9_aRP4tGcqQ-nQ5ERN0l-d6&#x3D;w900-h900-p-k-no" alt="Chefão Choperia e Pizzaria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Chefão Choperia e Pizzaria</b>
+                <small>5 ⭐ (5 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Paulo Emanuel de Almeida, 777 - Wanel Ville, Sorocaba - SP, 18053-505, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/chefaochoperia?igsh&#x3D;MTc5YjEwa2g0eDV1cQ&#x3D;&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJi0HSDXRhz5QRQxBG1RmvWxQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqvbdQEQQbQMBhVPPhnnw6XtVaaUNziMJ-Yz4pcnsFPnRJpn3JJQr9Qwz7uZ7DLQolpsK1WdaoD-CKeVIykvp3GFCf6B6vcRU5-StmJyIjVqNtGWHvJvkRfghGukT3lFAebCQ0p&#x3D;w900-h900-p-k-no" alt="Cheff Pizza - Pizzaria em Sorocaba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cheff Pizza - Pizzaria em Sorocaba</b>
+                <small>4.9 ⭐ (209 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Campos Salles, 245 - Vila Assis, Sorocaba - SP, 18025-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Delivery de Pizza</span><br />
+               
+              <span class="restaurant-website">🌐 http://contate.me/5515998085252</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJV19rHfCLxZQRRVWdothYmqw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nosGSaPVrdKkLgzqTGVUjcsZKVTuoQaCpmxuY11TmcYG2BlXkKZzzckoT20W-djTE2G57I0Vu_T7hziV5Kw8gbMj3nL7BDCYLQB4ulg6ScskDKfW7kKU2J7oUDzDRpBTA1r1oZP&#x3D;w900-h900-p-k-no" alt="Cheirin Bão Jd Vergueiro logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cheirin Bão Jd Vergueiro</b>
+                <small>4.8 ⭐ (311 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Barão de Tatuí, 479 - Jardim Vergueiro, Sorocaba - SP, 18030-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ3TULIGlhz5QRmWSUIXpQDCo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN_tAZy1xn0jlbQBoB3Pg4shN1bzVpF5YNZ5Qhu&#x3D;w900-h900-p-k-no" alt="Churrascaria Nativas Grill | Sorocaba | Restaurante | Rodízio logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Churrascaria Nativas Grill | Sorocaba | Restaurante | Rodízio</b>
+                <small>4.3 ⭐ (4515 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. São Paulo, 4520 - Além Ponte, Sorocaba - SP, 18013-004, Brazil</span><br />
+              <span class="restaurant-description">★★★★☆ · Churrascaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/nativasgrillsorocaba/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: 11 AM–3 PM, 6–10 PM<br />
+                Seg: 11 AM–3 PM, 6–10 PM<br />
+                Ter: 11 AM–3 PM, 6–10 PM<br />
+                Qua: 11 AM–3 PM, 6–10 PM<br />
+                Qui: 11 AM–3 PM, 6–10 PM<br />
+                Sex: 11 AM–3 PM, 6–10 PM<br />
+                Sab: 11 AM–3 PM, 6–10 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJKVlJgKmKxZQRA7l5KJqdSQw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npcY6sN7TA1XYxQNMEJMNsxLsaierJgcoOz-ldxkSGYTDevlbRfHiMOX9Cf2j3OqybjXllpgHCkHceHEPsANeBGq_9cTbL7-S-mT1T8RjjZ-KkOas_yYnN_GWZ1snUVb4-7PPNQ3A&#x3D;w900-h900-p-k-no" alt="Cia da Esfiha Cozinha Artesanal logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cia da Esfiha Cozinha Artesanal</b>
+                <small>4.4 ⭐ (648 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Aparecida, 839 - Jardim Santa Rosália, Sorocaba - SP, 18095-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Esfiharia</span><br />
+               
+              <span class="restaurant-website">🌐 https://pedir.delivery/ciadaesfiha</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJa28kFeD1xZQRniAoSAtzUd4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;JstIFg2QYLsM4ZxKABxWvg&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;109.69366&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Cida Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cida Lanches</b>
+                <small>4.8 ⭐ (30 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Itavuvu, 1538 - Jardim Santa Cecilia, Sorocaba - SP, 18076-005, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJh2X7lemKxZQRzrW8UBDtCC8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np8LAH8p_HtwKoqsTHuhnOMpXI7LPwdSE9kb217R8fuyo0DUlqkP1veo8bd8jwZjgY61Ty0ohM3BNjKXAnEAnse4lM1xb0Ubxp3bg4WyKQS981hyar1vWGs0PoqhbRL7WqTIQvc&#x3D;w900-h900-p-k-no" alt="Cirineu Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cirineu Lanches</b>
+                <small>4.8 ⭐ (173 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 WHATSAPP, 5515981853809, R. João Pessoa, 691 - Vila Jardini, Sorocaba - SP, 18044-050, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJodNhxU_1xZQR60CM5sciTyw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhEK8CW-TbVebMLTqPmxwrNpKgBeAGWe8EyI-czsPKBvlhva41t3cozv82jzHueMB8UVzv2aa8Qv2UelqB61nsBxtIOG2bNWY__NPOFaQofixa8NuFblDZELnRjGrmjHdWLoqlwcMDxNu7t9sJTrgQ9fVV1u_diS2Q8Xsl6gwBYn8ddqL6hRWen4qTmYyWQKPBR_TA&#x3D;w900-h900-p-k-no" alt="Coffee Day logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Coffee Day</b>
+                <small>4.4 ⭐ (71 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paes de Linhares, 1150 - Vila Fiori, Sorocaba - SP, 18075-630, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Cafeteria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJZQA8P8D1xZQR9d4pdkamw0M" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOlVo8Jz1FinLycVZbjd1u3yEzn4ypCFcTpIu4K&#x3D;w900-h900-p-k-no" alt="Coimbra Lanches Sorocaba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Coimbra Lanches Sorocaba</b>
+                <small>4.2 ⭐ (37 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. João Monteiro Cepelos, 93 - Jardim Novo Horizonte, Sorocaba - SP, 18071-810, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+               
+              <span class="restaurant-website">🌐 https://shop.beetech.com.br/coimbralanches/?w&#x3D;2160612f095443082be4011f1f8a7c04</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJSQ1BsRj1xZQRO6s7nj56E7M" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nozVpu3GrjqJMXyrlhDK2JH4Q9P4t2Qe_dgaQZ5kZPVnn46CRns2aVcMHRCRgwQdvTWlnmzkaUJQZ9NHJiU9KOUBw3JGJ8skr6TPwRmEhBzaAxMQGb2BT5WdTupeJCCglmSUUBW&#x3D;w900-h900-p-k-no" alt="Coió Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Coió Lanches</b>
+                <small>3.7 ⭐ (887 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Próximo a, Av. Ipanema, 4559-4401 - Jardim Novo Horizonte, Sorocaba - SP, 18071-801, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/coio_lanchessorocaba</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJR8AjZASLxZQRKB6mMpNp30s" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqH4x_aJpBqPSiS0PHRpKptrTcp54zz27Np1XEaOtGEJaPiblrdP0zjsE7UrPKlAGs6MeqVRQhRr3BRSRxnSd4uzOs7V45YLxOQfg50XCmny4SuniAiMqSp8BjjLQyAoTN00c2j&#x3D;w900-h900-p-k-no" alt="Colina Confeitaria &amp; Café logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Colina Confeitaria &amp; Café</b>
+                <small>5 ⭐ (5 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Adoniran Barbosa, 35 - Parque Campolim, Sorocaba - SP, 18047-643, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Confeitaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJfTCTRpOKxZQR1ixCpUAqZgo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrf8RJ78p5MVXfAMCzRH1jx1XZmbBx-3_zNFNTfT-8STolGZjDvQH_A7no3OoXhEBxfZq7NrPk5Lz_R6f8chq9Gt93_WJWlSvdgLXTXAT6j9eQruVPPTMUMlDNPs54zaWyhu2c8&#x3D;w900-h900-p-k-no" alt="Colombina Dolceria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Colombina Dolceria</b>
+                <small>4.5 ⭐ (1128 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Aclimação, 410 - Jardim Paulistano, Sorocaba - SP, 18040-690, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Confeitaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://linktr.ee/colombinadolceria</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJC9rxYJ5hz5QRZRVetR9L6G4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4no_lQfIN6cGpIrI3S_9dcYmr9I5UzZ99s185VzDEbVNkEGhRD85sy-9lQUWZgs1N_DkNKiEQOORLkRcdw5AfX9I1lsYnOx0RLLif9cExRNMENq9lTpdU3BPXL66fjfDhXJhY_gegA&#x3D;w900-h900-p-k-no" alt="Confiança Supermercados - Av. São Paulo logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Confiança Supermercados - Av. São Paulo</b>
+                <small>4.8 ⭐ (5985 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. São Paulo, 2717 - Além Ponte, Sorocaba - SP, 18013-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Supermercado</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.confianca.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJcTjagh71xZQRpsF8iCGHtpY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhGKff8124GsvrEU-EuTJVWr7wQqHvyXO0MO3wdiSU-4KnnsisbZQnuZIVRmCGkB4KCwhyXSZM06O28a23xk1NdWvPq-Lqt7KkhMGNRrELZrAainX-wZQx3eu9SRWo_djmfnblxVHkgK2BY8ql0D7LzSI_JU6HuhJEal9SY9NzpBUKSMgNtn1_d2SgL9rUiHitbcEIM&#x3D;w900-h900-p-k-no" alt="Cool logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cool</b>
+                <small>4.6 ⭐ (144 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Americana, 85 - Vila Nova Sorocaba, Sorocaba - SP, 18070-679, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/show_bola_bar/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: 7:30 AM–1 PM<br />
+                Seg: 1 PM–12 AM<br />
+                Ter: 1 PM–12 AM<br />
+                Qua: 1 PM–12 AM<br />
+                Qui: 1 PM–12 AM<br />
+                Sex: 1 PM–12 AM<br />
+                Sab: 7:30 AM–1 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJpeSiZ3WLxZQRPOZABpZ5cAI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqyWs11hBB6gP24n0D20SO2J3CjNv8Ay2VatSTQiygyYtErY26_a99jcqskjuyOTJRXJEBq4y1PLlxD4hOechSFrQge34fo_JUKmtCzy0LV0pFqMMutkB23PNhu_0iiZEF9iba4kg&#x3D;w900-h900-p-k-no" alt="Copacabana Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Copacabana Bar</b>
+                <small>4.5 ⭐ (411 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. da Penha, 1147 - Centro, Sorocaba - SP, 18010-004, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante de almoço</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/copacab.anabeach?igshid&#x3D;MzRlODBiNWFlZA&#x3D;&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ_xlqELOLxZQR8tLgS1apJDM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4notNyINGSCRkXXt13IFfHoGXMCXVwSc5vOnfLh2zbelPvJvXkjwdc42Q1kGAhWX7k9QC6YOlrqQZNZYtEWOUkR4zuLJQU_Rk8BGDC-s0Wi7KKlR9UaX06b52sAdCiTJpyN14Q&#x3D;w900-h900-p-k-no" alt="Coxinha Real Shopping Cianê logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Coxinha Real Shopping Cianê</b>
+                <small>4.3 ⭐ (87 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Dr. Afonso Vergueiro, 823 - Centro, Sorocaba - SP, 18035-370, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante fast-food</span><br />
+               
+              <span class="restaurant-website">🌐 https://coxinhareal.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJVwrQAXz1xZQRsZj1j13pF6o" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPzW7RucQzoPblZWH68qW6ASdKtX5AyOSD6rfhi&#x3D;w900-h900-p-k-no" alt="Cozinha Cícera Vegana logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cozinha Cícera Vegana</b>
+                <small>4.7 ⭐ (19 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paes de Linhares, 667 - Vila Fiori, Sorocaba - SP, 18075-630, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJqZ6l7Tv1xZQR2kzh5lf2y34" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;VLg-yeRrfLlXr05knbr6Hw&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;138.40059&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Cozinha da Patroa logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cozinha da Patroa</b>
+                <small>5 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Galileia, 179 - apto 7 - Jardim Betania, Sorocaba - SP, 18071-570, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: 12–9 PM<br />
+                Seg: 12–9 PM<br />
+                Ter: 11 AM–9 PM<br />
+                Qua: 11 AM–9 PM<br />
+                Qui: 11 AM–9 PM<br />
+                Sex: 11 AM–9 PM<br />
+                Sab: 11 AM–9 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJXZu7yRyLxZQR0WoeiMFDseI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4no-b8ps0zad1RMZVjj3EJzZr_vx2E2NjrmF4wlMgGocNQq57J18aMwe3EtTsTgGvNO-zSTraj9crqyuTSk0UMmUqTY-xt4kPTNfJoSYsCb3WI57ZuLMKPcZGrdZzp7bJPHnxUkIWCl6EqCh&#x3D;w900-h900-p-k-no" alt="Crif&#x27;s Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Crif&#x27;s Restaurante</b>
+                <small>4.6 ⭐ (255 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Getúlio Vargas, 55 - Jardim Sao Paulo, Sorocaba - SP, 18051-480, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante self-service</span><br />
+               
+              <span class="restaurant-website">🌐 https://m.facebook.com/pages/category/Brazilian-Restaurant/Crifs-Restaurante-714889838550092/?locale2&#x3D;pt_BR</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 11 AM–2:30 PM<br />
+                Ter: 11 AM–2:30 PM<br />
+                Qua: 11 AM–2:30 PM<br />
+                Qui: 11 AM–2:30 PM<br />
+                Sex: 11 AM–2:30 PM<br />
+                Sab: 11 AM–2:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ96imM7CLxZQRR6nnijJDtkY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npsiFiPHd5JJ91_3qFAPpFT5lzF51yhxmCgDyy3xGYIRFtmOlh_f-s0m4QxuzqRSYERRRf6U4SXlJgGzLnd67wZo_c7ESZK1VhCP4DaEokVsvxa_riDOKbnBu85bdFyX69wfC5fAA&#x3D;w900-h900-p-k-no" alt="Cucina del capo logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cucina del capo</b>
+                <small>4.8 ⭐ (264 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Francisca de Queiroz, 43 - Mangal, Sorocaba - SP, 18040-325, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante italiano</span><br />
+               
+              <span class="restaurant-website">🌐 https://cucinadelcapo.saipos.com/home</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: 12–3:30 PM<br />
+                Seg: Closed<br />
+                Ter: Closed<br />
+                Qua: 6–11 PM<br />
+                Qui: 6–11 PM<br />
+                Sex: 6–11 PM<br />
+                Sab: 12–3 PM, 6–11 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJRfW8Va1fz5QRI4q6Y-V6x28" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipM4KNxWBvwyNvt6Q-23HRg3CUgAkqzuw41aGn3G&#x3D;w900-h900-p-k-no" alt="Cumbucas Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Cumbucas Restaurante</b>
+                <small>3.2 ⭐ (163 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Pedro Álvares Cabral, 7 - Vila Progresso, Sorocaba - SP, 18090-505, Brazil</span><br />
+              <span class="restaurant-description">★★★☆☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: 11 AM–2:30 PM<br />
+                Seg: 11 AM–2:30 PM<br />
+                Ter: 11 AM–2:30 PM<br />
+                Qua: 11 AM–2:30 PM<br />
+                Qui: 11 AM–2:30 PM<br />
+                Sex: 11 AM–2:30 PM<br />
+                Sab: 11 AM–2:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJkW-f30_1xZQRVLBdqUQGqIE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMoAG3igrsK6uSRF3CkRrIzBzcGzso9P0mSHosE&#x3D;w900-h900-p-k-no" alt="Pizzaria Caetano logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Caetano</b>
+                <small>3.8 ⭐ (43 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paes de Linhares, 1211 - Vila Fiori, Sorocaba - SP, 18075-630, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.instagram.com/pizzariacaetano_</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJLdr-alX1xZQRrJzg4WbL1AM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nra569sCLLTjF0N9jE7pdd41g2HF5wRTPQ6ME_qQ46ClIxZxFjbUpA7gWJUJz9Y-JWSDZevn-4qnkQks8VpzLU6oJq9StB4WvgqcFApqJVGGzBTskjB5mDAL2koNll01S9nTi0&#x3D;w900-h900-p-k-no" alt="Pizzaria Caldarelli logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Caldarelli</b>
+                <small>4.5 ⭐ (199 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. João Cordeiro, 43 - Vila Progresso, Sorocaba - SP, 18090-360, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/pizzariacaldarelli?utm_source&#x3D;ig_web_button_share_sheet&amp;igsh&#x3D;MXM0M2VlajlpOWFoYw&#x3D;&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJPRTMbwDzxZQRO__9gRcnpAI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noVHqXjPY1XpLnIoKYb4DAyWCoq3JMJrNjIhG0em_EB_pj73HJgeWVddz1gmNmT_07f76NlcqYpfOesy9cBTmr_4kT7EYTJrQmDEbdnVb89e3mm9TAHM4UtpK_qztHjbUwSU2dh9KnI_4H1&#x3D;w900-h900-p-k-no" alt="Pizzaria Colonial logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Colonial</b>
+                <small>5 ⭐ (4 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Cervantes, 143 - Vila Assis, Araçoiaba da Serra - SP, 18025-174, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ0_9ifkxgz5QRLFRFjL-muiY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNnr15yOdTTmvpEgRtoa4wBVX58PflVvWJ6vt6h&#x3D;w900-h900-p-k-no" alt="Restaurante Campeão logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Campeão</b>
+                <small>4.7 ⭐ (162 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Profa. Olga Vera Cruz, 20 - Jardim Gutierres, Sorocaba - SP, 18015-410, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante brasileiro</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 11 AM–2:30 PM<br />
+                Ter: 11 AM–2:30 PM<br />
+                Qua: 11 AM–2:30 PM<br />
+                Qui: 11 AM–2:30 PM<br />
+                Sex: 11 AM–2:30 PM<br />
+                Sab: 11 AM–2:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ-1qNw7yKxZQR0q7JG_fVFFw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhFm1s1aAGfx0M97HrXpSsWCXN3bbMPi_LPU2mhd-ULinBiGNMBjlR_RBJNYLl07DngKPt_AcFWEHdgfmBFSKHU7v_8h_jZRNERKZoy8lcE6TEL7FegiTVhbIoxPVnGMlXJIcbhVlsB8SbAACZIhT2I1zOxiQoUvacpAkRGPEImeF7YMw9zV4wbpNnfDhLC8VUFmKy8&#x3D;w900-h900-p-k-no" alt="Restaurante Casa Nostra logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Casa Nostra</b>
+                <small>4.6 ⭐ (57 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Whatsapp:(31) 99721 - 4510__, R. José Miguel Saker Filho, 138 - Centro, Sorocaba - SP, 18010-090, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante self-service</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 11 AM–3 PM<br />
+                Ter: 11 AM–3 PM<br />
+                Qua: 11 AM–3 PM<br />
+                Qui: 11 AM–3 PM<br />
+                Sex: 11 AM–3 PM<br />
+                Sab: Closed<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJW85DYIGLxZQR0kdPG0lgGPA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOcYjn0R2n_1deOAYx7T60Srna4SzlirI6WIQsk&#x3D;w900-h900-p-k-no" alt="Restaurante comida caseira logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante comida caseira</b>
+                <small>4.5 ⭐ (57 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Vila Espirito Santo, Sorocaba - SP, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 11 AM–2:30 PM<br />
+                Ter: 11 AM–2:30 PM<br />
+                Qua: 11 AM–2:30 PM<br />
+                Qui: 11 AM–2:30 PM<br />
+                Sex: 11 AM–2:30 PM<br />
+                Sab: 11 AM–2:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJI164-6f1xZQRTk29cEjU_2w" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPvVft8LjrmApIqCFmSCCyljCQ0bid3YPayw2mf&#x3D;w900-h900-p-k-no" alt="Restaurante comida chinesa yakisobar Sorocaba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante comida chinesa yakisobar Sorocaba</b>
+                <small>4.6 ⭐ (103 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. João Tomé Franco, 324 - Wanel Ville, Sorocaba - SP, 18055-087, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: 11 AM–2:30 PM, 6 PM–12 AM<br />
+                Seg: 12–10:30 AM<br />
+                Ter: 11 AM–2:30 PM, 6–11 PM<br />
+                Qua: 11 AM–2:30 PM, 6–11 PM<br />
+                Qui: 11 AM–2:30 PM, 6–11 PM<br />
+                Sex: 11 AM–3 PM, 6–10:30 PM<br />
+                Sab: 11 AM–2:30 PM, 6–11 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJB0p3yDtgz5QRaExoisccoiM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqh0yxnY44ykwEXh6fIvuLu6qj1s21OCuAU5myBODFG-8oXV7QLBlxEPPG2sd8ArX-KePE6glN75tqZW9eiI4ju169Qi9wdYoQAF-Km7VqQEUoaagy04gpGc1-N2EtBmsSkBVaZ&#x3D;w900-h900-p-k-no" alt="Restaurante Copacabana logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Copacabana</b>
+                <small>4.6 ⭐ (86 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Eduardo de Campos, 30 - Vila Haro, Sorocaba - SP, 18015-095, Brazil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: Closed<br />
+                Seg: 9:30 AM–2 PM<br />
+                Ter: 9:30 AM–2:30 PM<br />
+                Qua: 9:30 AM–2:30 PM<br />
+                Qui: 9:30 AM–2:30 PM<br />
+                Sex: 9:30 AM–2:30 PM<br />
+                Sab: 9:30 AM–2:30 PM<br />
+              </small>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>
