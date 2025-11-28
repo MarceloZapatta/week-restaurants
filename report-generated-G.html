@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes da semana G</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.restaurant-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.restaurant-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #f3f3f3;
+        border-radius: 6px;
+        padding: 12px;
+      }
+      ul.restaurant-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+        max-height: 277px;
+      }
+      ul.restaurant-list .restaurant-name {
+        font-size: 1.2em;
+        color: #222;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.restaurant-list .restaurant-container {
+        width: 130%;
+      }
+
+      ul.restaurant-list .restaurant-container span {
+        padding: 5px;
+      }
+
+      .toggle-hours-btn {
+        margin: 8px 0 8px 0;
+        padding: 7px 22px;
+        font-size: 1em;
+        background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        outline: none;
+      }
+      .toggle-hours-btn:hover,
+      .toggle-hours-btn:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+        color: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurantes da semana!<br />Letra: 'G'</h1>
+      <ul class="restaurant-list">
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJBQrd2Z1hz5QRhOD4qf_Ead0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN0Znt5dHWJ0Udh0-NAOSDkXicorRJkshWFNre_&#x3D;w900-h900-p-k-no" alt="Bar da Garagem logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar da Garagem</b>
+                <small>4.6 ⭐ (945 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Direitos Humanos, 122 - Jardim do Paço, Sorocaba - SP, 18087-082, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bares</span><br />
+               
+              <span class="restaurant-website">🌐 https://beacons.ai/bardagaragemsorocaba?fbclid&#x3D;PAAaZFamiruCMW0pePdJ7HR10FtNZQ5g7f1OK3qKGD6X1kZadGgr59MRDMF_A_aem_AYScRbXBflrragvXR2fErWBCrtXxs0V05X_LtLWlbM_7Nf2fiSm3ROl5D_xO5MgftA8</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJc5DCcqWKxZQRiiofsH_bToc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;iiGXdmv91biO3MRKCWqFXA&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;283.16348&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Bar do Galo logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Galo</b>
+                <small>4.8 ⭐ (30 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Arlíndo Luz, 45 - Jardim Santa Rosália, Sorocaba - SP, 18095-050, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJYxbki42KxZQR2g38linMCr0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxV4A4SoGx5_yEBi0vuXb8f20kwo17ekg1X1fi0Oiuu-JGX094yCwtbi9F8oXmojkNAK8XeopLiMIuJnMhZ3YyVXCaczieysMVcEEZi8ivkbPTQsd0HRkeeAdJCfJ-eYwXzPz_gtw&#x3D;w900-h900-p-k-no" alt="Bar do Giba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Giba</b>
+                <small>4.7 ⭐ (2276 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Cap. Bento Mascarenhas Jequitinhonha, 1381 - Jardim America, Sorocaba - SP, 18046-692, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.facebook.com/BardoGiba</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJSaMnOnr1xZQR-cWnU_GmyDY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPGoBAOxkhoI2AZkxWuRrF3flDswQlpjc8dFRc6&#x3D;w900-h900-p-k-no" alt="Bar do Gui logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Gui</b>
+                <small>4.8 ⭐ (116 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Aparecido de Souza, 20 - Jardim Sao Lourenzo, Sorocaba - SP, 18076-300, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar e Grill</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/bardogui.sorocaba</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJa_62GBv1xZQRAZItmbSKXBU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;0wr-4VWqL11Sdpe1q5Vd6w&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;324.6827&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Bar do Gusmão logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Gusmão</b>
+                <small> ⭐ ( avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Luques, 124 - Jardim Altos do Itavuvu, Sorocaba - SP, 18074-125, Brasil</span><br />
+              <span class="restaurant-description">Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJNfZ6NzuLxZQRwj6UiipzgwQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN687H4C5IWEf2WeR8eUZpQqvimxnTflgPyiLFZ&#x3D;w900-h900-p-k-no" alt="Bar do Gutão logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Gutão</b>
+                <small>4.7 ⭐ (327 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Visc. de Cairú, 467 - Vila Independencia, Sorocaba - SP, 18040-335, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ9eunpz2LxZQRYoN2T2tGtkc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzJt4BO-I8lJbrR8sOWo8-5p0v0SVqzbPPLLK-U7e9W_RKcQxGYQmZR2dP8BASCe5zuMhDoWW18B_jtS4-rkDhWZXNgtOphGsCkRIAaOIieuGOExUuJjdrXcOx4iYH67ywRYpnZ&#x3D;w900-h900-p-k-no" alt="G logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>G</b>
+                <small>5 ⭐ (3 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Serafina Milego Latorre, 690 - Jardim Vera Cruz, Sorocaba - SP, 18050-020, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJW0bacpmKxZQRkWYa1fzmTTw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;vIV4V6YBrvDUQ1gTh2fbVA&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;218.64326&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="G L Ghiraldi Lanchonete-ME logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>G L Ghiraldi Lanchonete-ME</b>
+                <small>3 ⭐ (2 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Comendador Pereira Inácio, 1801 - Vila Assis, Sorocaba - SP, 18030-005, Brasil</span><br />
+              <span class="restaurant-description">★★★☆☆ · Restaurante fast-food</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJVVnKdT31xZQRH89EjVuDKFM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;JzHAr1XoRnPPkrUHZQn-qw&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;316.9385&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="G&amp;G Lanches e Bebidas logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>G&amp;G Lanches e Bebidas</b>
+                <small>5 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Orélio Sabadin, 465 - Jardim Santa Barbara, Sorocaba - SP, 18053-453, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJS8nSz631xZQRjmlN_OoxnR8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw3vQeys34sPnN-BqQwxgzqQkq1X7L-XJBRH71DInPTwOIbL9FKmwiDF4_UNNRkjgTwWBTXyLXPgaPHWVCuE86o9l1cKSVvgo78_7Zk_oYUdo14sZHy6T9CSW11wYhXsQJUgOxv6g&#x3D;w900-h900-p-k-no" alt="Gaby Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gaby Lanches</b>
+                <small>4.1 ⭐ (1028 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Edward Fru Fru Marciano da Silva, 168 - Jardim Sao Guilherme, Sorocaba - SP, 18074-648, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJyyhbb6f1xZQR3fvHSGM1TS4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxMtgS4VJIGdXjZLlMICOWS6CY3bED_WzgHZXz7wbXb1Wqq2PPKgk8WrzbMKNqYen7cxMDHL4egU92JgnTjoQInEB5-mWFJ8uO7BLwQ6PmcETXXJovGzhTlxoG3bto0132WbyT8sw&#x3D;w900-h900-p-k-no" alt="Galera Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Galera Lanches</b>
+                <small>4.6 ⭐ (120 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Ordália Albino Roseiro, 196 - Jardim Santa Claudia, Sorocaba - SP, 18077-535, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJH1PbPgBhz5QRmaWY2K9yu7M" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOIvP-EFj6Taa720zrW7yBbPwodF0zVG_bp1s4p&#x3D;w900-h900-p-k-no" alt="Garag lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Garag lanches</b>
+                <small>4.6 ⭐ (72 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Prof. Joaquim Silva, 620 - Jardim Saira, Sorocaba - SP, 18085-000, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Hamburgueria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJc5-D7FiLxZQRCPNRnqotcDI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXHYWV7pzSb595him1hTNwKzprbY-x_dNPfuPHIiAy4MpniyaWqu3X_3m18114U30xMoK3JmrW5wMys3eta5nfJji2yClzUkg4VKdResV-Jf30IRrwwTveCJP-BT-6CSQroSh9Uw&#x3D;w900-h900-p-k-no" alt="Garagem bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Garagem bar</b>
+                <small>4.4 ⭐ (251 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Salvador Milego, 66 - Jardim Vera Cruz, Sorocaba - SP, 18050-010, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ2RmGgHCLxZQRSV8u-i_6_pA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMY8paXx-Q90-vele_wV-3KvQnmKDOy5YfXY6xh&#x3D;w900-h900-p-k-no" alt="Garagem Pastéis logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Garagem Pastéis</b>
+                <small>5 ⭐ (10 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Leopoldo Machado, 516 - Centro, Sorocaba - SP, 18035-075, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.ifood.com.br/delivery/sorocaba-sp/garagem-pasteis-centro/c763f6b8-af25-462a-bdaf-222b55b867e4</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ8cW4T8KLxZQRioHlgSkUkKE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwmDfTT5oFCZ5iZxvUR7u5IraLbZgfZa9wvL5jZSNOa06sN0zvEzLz20zH12lw1orKRoNBLOVLM_u-KlOZRTjAtGvfyhic-MMSsXx8p39pSmP1PNxoOsvHaA9NUHmF9LBHW_1raPYJWo3uM&#x3D;w900-h900-p-k-no" alt="Gastão Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gastão Bar</b>
+                <small>4.4 ⭐ (955 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Gustavo Teixeira, 474 - Vila Independencia, Sorocaba - SP, 18040-323, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Bar</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/gastaobar</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJO0e3creKxZQR53B9abY61-c" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNs2r5N40suEGB9JO8bvpm9gUnp7aZ7XCjfhDgR&#x3D;w900-h900-p-k-no" alt="Gazometro Rock Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gazometro Rock Bar</b>
+                <small>4.4 ⭐ (187 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Gonçalves Magalhães, 122 - Vila Trujillo, Sorocaba - SP, 18060-240, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Bares</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJeSMtVGiKxZQR0z7piGfs_wI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMZWrPKAmz0bJL5hWQA53Rn_J7491bfD47BQMhX&#x3D;w900-h900-p-k-no" alt="Gourmet Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gourmet Bar</b>
+                <small>4.3 ⭐ (68 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Avenida Professora Izoraida Marques Peres, 770 - Parque Campolim, Sorocaba - SP, 18047-770, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.accorhotels.com/</span><br />
+                           </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJTRgdhLn0xZQRLNOFHq1I42I" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;XBqZc1Jq2A4ZZwIqLUdJNg&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;263.26385&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Gringos - Restaurante e Assados logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gringos - Restaurante e Assados</b>
+                <small>4.4 ⭐ (289 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Elias Maluf, 2207 - Wanel Ville, Sorocaba - SP, 18055-215, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante self-service</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.facebook.com/assadosgringos</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJK5TKkBhhz5QRUynEv56xQiU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNzyaLohjFfd8aKAiRYI2SF4fO2t9f4Z6Jgvosz&#x3D;w900-h900-p-k-no" alt="Gu Hot Dogs logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gu Hot Dogs</b>
+                <small>5 ⭐ (150 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Granada, 169 - Vila Hortência, Sorocaba - SP, 18020-246, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ9-YpN91hz5QRkS4FIHycA6w" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMq-0kg0p4OSs74eNHSpl5YoSpTNcwugepP8yy3&#x3D;w900-h900-p-k-no" alt="GuLanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>GuLanches</b>
+                <small>5 ⭐ (8 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Edjane Andrea Burgato, Borgato, 11 - Vila Nova, Votorantim - SP, 18113-540, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Sanduicheria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJablK-rL1xZQRrMW2i7POZb8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyGV0Ht5ydH82aCx53G-uNJN2vQf6Ua9vmZcfIA-bby7k67BBjzvl8xUci4Lct_WQDJ5xNW_GOmY4p_jI-eykEfTKTMhQzOboebpe9xiQTEcv3HF9LzjXARYR2WEjtMrm00E6nMRQ&#x3D;w900-h900-p-k-no" alt="Gusta&#x27;s Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Gusta&#x27;s Lanches</b>
+                <small>4.4 ⭐ (119 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Nelson Cardoso Marques, 114 - Jardim Betania, Sorocaba - SP, 18071-290, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/gustaslanches/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ54PTVaL1xZQRVg2s8PeC9pg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;K_ojqyhCSbX9w1gBGgQ3kw&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;321.60556&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="GV Refeições logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>GV Refeições</b>
+                <small>4.4 ⭐ (71 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Rodrigues Claro, 369 - Parque das Paineiras, Sorocaba - SP, 18078-632, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJkU2Q-duKxZQR2Nfc7ynqA-I" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzMhh6pnil1vbL1IaqIBJ_WreG9YCYzXFkgzwfw5l8nXQIjyV7W7q0WdvmtTixwFxEtPPZJakOkpb2iQA7kLW9Bpz373_s3Vmer7n2R69ZsT_OArl6zZGVY-CHsVLwnJthBjaktvQ&#x3D;w900-h900-p-k-no" alt="Pizzaria General logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria General</b>
+                <small>4.3 ⭐ (2393 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Gen. Carneiro, 1583 - cerrado, Sorocaba - SP, 18044-103, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ8-JrbiSLxZQR0uSUljv8pcA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOoxbF0LJaGf1lEX3AgFckv11qufQBzX-XoC75R&#x3D;w900-h900-p-k-no" alt="Pizzaria Geração logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Geração</b>
+                <small>3.8 ⭐ (138 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Ângelo Fazano, 118 - Parque Esmeralda, Sorocaba - SP, 18055-780, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ76Ct8071xZQRkOaQQX9K7ag" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNrb2h66IYQ-z0VmmzUGLcZSeIBlf80IWcLCotQ&#x3D;w900-h900-p-k-no" alt="Pizzaria GIALI logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria GIALI</b>
+                <small>4.7 ⭐ (75 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Olegário Ribeiro, 665 - Vila Sonia, Sorocaba - SP, 18080-480, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJb7d-dQD1xZQR0XItv_l5qfY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipO0p2hdlCpmWBIRveXIqEEbhhtGJ0Ki2XCPH9jk&#x3D;w900-h900-p-k-no" alt="Pizzaria GUILHERME logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria GUILHERME</b>
+                <small>4.7 ⭐ (115 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Pedro Pegoretti, 223 - Vila Brasilandia, Sorocaba - SP, 18075-670, Brasil</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ5f_EJFz0xZQRaR-JmZKuEHE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxPyLc49PPUD-EaXe7lauZVf2fraqcquskFXqS5zBiBfdGk3HU5mmyaCskoX5n_MB0PbJRK51ZGu7HVSHj0wT9YdU6gUMLPxsYSa_KdOqihaSLlWiFDkMGGB5MnwD8Uw9QoOOM&#x3D;w900-h900-p-k-no" alt="Restaurante Gauchinho&#x27;s Ipanema logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Gauchinho&#x27;s Ipanema</b>
+                <small>4.2 ⭐ (983 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Ipanema, 5060 - Recreio dos Sorocabanos, Sorocaba - SP, 18070-671, Brasil</span><br />
+              <span class="restaurant-description">★★★★☆ · Churrascaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://menu.beefood.com.br/gauchinhoszonanorte2</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>
