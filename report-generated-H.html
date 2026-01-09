@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes da semana H</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.restaurant-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.restaurant-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #f3f3f3;
+        border-radius: 6px;
+        padding: 12px;
+      }
+      ul.restaurant-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+        max-height: 277px;
+      }
+      ul.restaurant-list .restaurant-name {
+        font-size: 1.2em;
+        color: #222;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.restaurant-list .restaurant-container {
+        width: 130%;
+      }
+
+      ul.restaurant-list .restaurant-container span {
+        padding: 5px;
+      }
+
+      .toggle-hours-btn {
+        margin: 8px 0 8px 0;
+        padding: 7px 22px;
+        font-size: 1em;
+        background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        outline: none;
+      }
+      .toggle-hours-btn:hover,
+      .toggle-hours-btn:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+        color: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurantes da semana!<br />Letra: 'H'</h1>
+      <ul class="restaurant-list">
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJrSaAd4iLxZQRsi-FAgakF98" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBEVo-t4L1nnSsooO2g1IWQ1BVv3hc_ZGkRSgVlsdxU59TjJxpYqsUn9Sx5AIaIwkkW2RFW8fozb7Zd2v3YbrtLrW88-aO1ANcaPoqyefJP22yIPUO5rSCSiaP88J6_sQyZ4lO&#x3D;w900-h900-p-k-no" alt="BAR DO HENRIQUE logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>BAR DO HENRIQUE</b>
+                <small>4.6 ⭐ (89 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. José Tótora, 613 - Central Parque Sorocaba, Sorocaba - SP, 18051-005</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/bardohenriquee?igshid&#x3D;Zjc2ZTc4Nzk&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJrRjDxR-LxZQRGgsc_13n_7U" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhGDTGsumxIFf7xUXKWjjs9lz2lw1jmW_FI9gwqBuOF1d9SWf8Znef_0zqk3IqekXfu_FuWsbnyiqOc4hQTpihjiYl8kL7lvtKFKrlqC7a2ZtSwnCyMNWG0rCz-kSHyxqwy7l-QRdFeGD8hKpaRWzYGzN1bzf2qjSeFq2MHZPlmYQKvI56cO5-fyLbC9ZN3SaeTQ7gk&#x3D;w900-h900-p-k-no" alt="Café House logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Café House</b>
+                <small>4.7 ⭐ (17 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Dr. Armando Pannunzio, 267 - Jardim Vera Cruz, Sorocaba - SP, 18050-000</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJze__fs9fz5QRj4XKzkWCUdo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipONWE83uQyXet46HS2EMeuAwn9CWdSSS0EFIjlb&#x3D;w900-h900-p-k-no" alt="Café HP Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Café HP Restaurante</b>
+                <small>4.5 ⭐ (56 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Proximo a PGG, Av. Iporanga, 255 - Éden, Sorocaba - SP, 18086-602</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.facebook.com/profile.php?id&#x3D;61557482196186</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJtZQdfTil3pQRmDRRksqpwww" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZvRPodpKqo5VaEbd2CXPftAnwnPQ6ZFFgXeYKt-YKLTA_JSP1ee17B7gEZesLvAmIuOWPhPDUG__tj2LgNzktfArQxlXdYsW8NouqkZozGfujz2bQ7t2-ZL2wklpL1TtH4Hmg&#x3D;w900-h900-p-k-no" alt="H.pizza delivery logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>H.pizza delivery</b>
+                <small>4.3 ⭐ (617 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Leopoldo Beninca, 53 - Vila Nova, Joinville - SC, 89237-100</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://m.facebook.com/pizzas.halley.9</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJTQR8qh1gz5QRfhBCBlzzYTQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPr0XxS4KPSllNVVkdVh60SNoKQX8jg42AHL-bm&#x3D;w900-h900-p-k-no" alt="Habib&#x27;s logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Habib&#x27;s</b>
+                <small>4 ⭐ (8829 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Porphyrio Loureiro, 103 - Jardim Santa Rosália, Sorocaba - SP, 18090-060</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante fast-food</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.habibs.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJGZQ7X2T1xZQRUr6wcdKVApQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyj8cVWj07rEVPZ3Ma6IK8vb7ntYTblROpf9R0wtmHGAFqgw4aC-2T4dLHxx049QboNv1qcspLHzuOM92bB-l5xsYOXNQzY1uoaXbSmwIEzTK1XV1sCrGrr7i8l5QSBDsFnxV1Y&#x3D;w900-h900-p-k-no" alt="Häd Dog logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Häd Dog</b>
+                <small>5 ⭐ (4 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Isaltino Guanabara Rodrigues da costa 295, Vila Barao, Sorocaba - SP, 18065-480</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJCwPd2XZhz5QRPQIhC4YHsnw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOF9KQbA1wGwEyip4vt_yqiqr0fCv8zC6h0L9e9&#x3D;w900-h900-p-k-no" alt="Hamburgueria Burguer House Sorocaba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hamburgueria Burguer House Sorocaba</b>
+                <small>4.9 ⭐ (17 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dorothy de Oliveira, 484 - Jardim Ipe, Sorocaba - SP, 18017-000</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+               
+              <span class="restaurant-website">🌐 https://shop.beetech.com.br/burguerhouse</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJY4PFUhL1xZQRSQCnqh1tG6Y" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwz6Yk22HMsX72vYuUtlsRTjV10SBqrk46VHplFR1OqeetundJxJUxVYJwB25fvisbkizT9NwHtJHtpgttksewWYlYlEvjK7tGjQyJARHqFPwLmh8V1m87XUWyV2--sElVYT-o&#x3D;w900-h900-p-k-no" alt="Hary Braws Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hary Braws Lanches</b>
+                <small>4.4 ⭐ (200 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Gonçalves Júnior, 201 - Vila Barao, Sorocaba - SP, 18065-610</span><br />
+              <span class="restaurant-description">★★★★☆ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJbXcEC6-LxZQRQ5fytaaN2ic" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMbIZvIKSPRJH-UQpvtajWjNzUnkhQ186-T6sBS&#x3D;w900-h900-p-k-no" alt="Hauaii Healty Fresh Food - Espaço Resenha logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hauaii Healty Fresh Food - Espaço Resenha</b>
+                <small>4 ⭐ (3 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Espaço Resenha, Av. Adolpho Massaglia, 515 - Vossoroca, Sorocaba - SP, 18116-175</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/hauaiifood/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJYW-DToGLxZQRuQyReyFCiiI" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxmHNUhLf5YCJr5_WedMqB7jfr5EBLw9eksC4MxaKk1UHcQilCbzxFxszVL657c1z4_ZQVQkXs_-4z8u8mgw3wdg5OiNqVDj-Frm_4NnRfuHK22uYgq4PE39ahak4JD7xTG9vvrEg&#x3D;w900-h900-p-k-no" alt="Hauaii Healty Fresh Food | Tauste General logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hauaii Healty Fresh Food | Tauste General</b>
+                <small>4 ⭐ (2 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Gen. Carneiro, 1120 - Vila Lucy, Sorocaba - SP, 18043-003</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://beacons.page/hauaii</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ4zdDq5TFyJQRW_48WK5goL0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMDexbQHafKiJOcqAv0ErX_cxWTk88w0hlMZplU&#x3D;w900-h900-p-k-no" alt="Hbar Dezesseis logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hbar Dezesseis</b>
+                <small>4.2 ⭐ (332 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Profa. Ana Maria Silvestre Adade, 751 - Parque das Universidades, Campinas - SP, 13086-130</span><br />
+              <span class="restaurant-description">★★★★☆ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJq6It2i-LxZQRQxeYSVk9CFo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIfwij7DIGsXV7xRLFzrpU2vT7npOznORoEQ5pe6gRSAa30kMoAC11-UDoso8EhbGR2tsaxHN6-A_KghX-FeY7FmSmBiAnwJnbTqVOfGeWuGM4Fe7onmI8n9VS2XLcaAepFxWz&#x3D;w900-h900-p-k-no" alt="Hellio&#x27;s Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hellio&#x27;s Restaurante</b>
+                <small>4.3 ⭐ (88 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Júlio Ribeiro, 46 - Vila Santana, Sorocaba - SP, 18080-690</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJu5Ah8hf1xZQRUgc0eUx0z08" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxGkw1WqeNP6ddW36u4VRtWSX-rEo3YdET6AilqAll406FcW4849eq2eyyoPUvlR2b0GCxqwQObMxUCZSyBjiGYkVebZ_0BG-bjshNBBSbCm5AnlS5NxqcCGVuOnG7X6mYnOUoy&#x3D;w900-h900-p-k-no" alt="Hevolution logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hevolution</b>
+                <small> ⭐ ( avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Atanázio Soares, 3385 - Jardim Maria Eugenia, Sorocaba - SP</span><br />
+              <span class="restaurant-description">Restaurante norte-americano</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJL6zyR6ZXzpQRAOwaP8ksrPQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN_zUTzlF12kJyFWt-IxXzd-AnkvhOQBDvkZsJv&#x3D;w900-h900-p-k-no" alt="HM Food Café - Pinheiros logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>HM Food Café - Pinheiros</b>
+                <small>4.5 ⭐ (1180 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Teodoro Sampaio, 1027 - 1º andar - Pinheiros, São Paulo - SP, 05405-100</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.hmfoodcafe.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJG0p-7E5YzpQRtNet0MmT6yQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwP4otp1CS-0_626vdjLqrC2Gj4OW0WGqjPAkP6ayXlyAP9Gkfy_camEOhF6cAhVR9N4tdCOsGaNvkyruNBiy6_s0dFkkdrGTyQko8hRIOB-HnYalt2LRDzc5Y_zoxvIFjqOCrIKMKheqRF&#x3D;w900-h900-p-k-no" alt="HM Food Café - República logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>HM Food Café - República</b>
+                <small>4.3 ⭐ (100 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Maj. Sertório, 95 - Vila Buarque, São Paulo - SP, 01222-001</span><br />
+              <span class="restaurant-description">★★★★☆ · Café</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.hmfoodcafe.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ8-nK5Vb1xZQRD49eDwM8iko" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPw5uoHg8m54XzYZ2ixsBXxuqNAh1X4mTHjlNrs&#x3D;w900-h900-p-k-no" alt="Hops Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hops Bar</b>
+                <small>5 ⭐ (7 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Fernandes Camacho, 06 - Jardim Alvorada, Sorocaba - SP, 18080-430</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJuYmE0Ab1xZQR6_rgW0jaIx0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzrEEqqYA0RPazCKytw-MUNhHiepolYZPdqClU0zkUVkocaiPPfKHBWmLiRV2A1xq7cFXjvkQgTUvm2pNir1lHLxezGJ3pIhBAblRz6fnBF5fy2GTIPLqZ26Qky-vnDGMS8rB8&#x3D;w900-h900-p-k-no" alt="Hora do Café - NESCAFÉ logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hora do Café - NESCAFÉ</b>
+                <small>4.1 ⭐ (20 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Itavuvu, 3.373 - Jardim Santa Cecilia, Sorocaba - SP, 18078-005</span><br />
+              <span class="restaurant-description">★★★★☆ · Café</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.shoppingcidadesorocaba.com.br/loja.asp</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJcwJzCQVfz5QR-XLXPGGGVAc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy9deOZofYsfj-DYAwUK6rkLD6LKKlctJFjtXGwdIW2cnylpbmHbVQ4PexzWo9zCuzJPAgIRxGhz7JHiD7NxhAAPZUhtg38OWbOizJJUXVtJX-rCHrbpN7dCC2wKDjNYUkbDqce&#x3D;w900-h900-p-k-no" alt="Hora Extra Bar &amp; Lenchonete logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hora Extra Bar &amp; Lenchonete</b>
+                <small>4.7 ⭐ (30 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Victor Andrew, 5190 - Zona Industrial, Sorocaba - SP, 18086-390</span><br />
+              <span class="restaurant-description">★★★★★ · Bar</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJxzyej2Ffz5QRrLZkySHdCEM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;H1yReG41_6MIObTlvT0aww&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;16.950449&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Hot Burger logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Hot Burger</b>
+                <small>5 ⭐ (4 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Antônio Joaquim Santana, 100 - Jardim Maria do Carmo, Sorocaba - SP, 18081-220</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJnURVGAz1xZQRORCfn3Og55g" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPqtRDvcoa_7L61TQTPh-laOqitUdXBaTFZMrmA&#x3D;w900-h900-p-k-no" alt="House One Burgers e Espetos logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>House One Burgers e Espetos</b>
+                <small>4.9 ⭐ (194 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paes de Linhares, 1165 - Brasilândia, Sorocaba - SP, 18075-630</span><br />
+              <span class="restaurant-description">★★★★★ · Hamburgueria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/houseoneburgerseespetos?igsh&#x3D;NGVhN2U2NjQ0Yg&#x3D;&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ5-yezNz1xZQRckCHvAhagSg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNQ-wrILFY3d_UkGbFE6mwV3crovZlR74Dek6A4&#x3D;w900-h900-p-k-no" alt="Pizzaria Hot sorocaba logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Hot sorocaba</b>
+                <small>4.5 ⭐ (1892 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Dr. Afonso Vergueiro, 1493 - Centro, Sorocaba - SP, 18035-370</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://pedido.anota.ai/loja/pizza-hot-15?f&#x3D;msa</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>
