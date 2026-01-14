@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes da semana I</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.restaurant-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.restaurant-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #f3f3f3;
+        border-radius: 6px;
+        padding: 12px;
+      }
+      ul.restaurant-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+        max-height: 277px;
+      }
+      ul.restaurant-list .restaurant-name {
+        font-size: 1.2em;
+        color: #222;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.restaurant-list .restaurant-container {
+        width: 130%;
+      }
+
+      ul.restaurant-list .restaurant-container span {
+        padding: 5px;
+      }
+
+      .toggle-hours-btn {
+        margin: 8px 0 8px 0;
+        padding: 7px 22px;
+        font-size: 1em;
+        background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        outline: none;
+      }
+      .toggle-hours-btn:hover,
+      .toggle-hours-btn:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+        color: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurantes da semana!<br />Letra: 'I'</h1>
+      <ul class="restaurant-list">
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJrVEWYyqLxZQRJcOwtm7HWhc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipM0nkanRXUXiJw50H61ntD76PvL3gtXEAi0vHG7&#x3D;w900-h900-p-k-no" alt="Café Itapiché logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Café Itapiché</b>
+                <small>5 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Cônego Januário Barbosa, 207 - Jardim Vergueiro, Sorocaba - SP, 18030-075</span><br />
+              <span class="restaurant-description">★★★★★ · Café</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJvZWxkV0QbJIRUtb9KmPLVl0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMJv3gtlf0puRo_Ywj1v6sF0L9rCikUnGuzWC6i&#x3D;w900-h900-p-k-no" alt="i pizza delivery logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>i pizza delivery</b>
+                <small>4 ⭐ (62 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua 13 N, 351 - Alvorada 2, Manaus - AM, 69042-120</span><br />
+              <span class="restaurant-description">★★★★☆ · Delivery de Pizza</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.ifood.com.br/delivery/manaus-am/igors-pizza-alvorada/be7b863b-99f4-42ed-bedf-e2258a784ded?UTM_Medium&#x3D;share</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJq3owJSVxzpQR5oZScZGoSwc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOvne4qyFOcnOWcyreaOXZOewAtYZpooKA8K8B-&#x3D;w900-h900-p-k-no" alt="Içá Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Içá Restaurante</b>
+                <small>4.8 ⭐ (347 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Maria de Oliveira Nunes, 60 - Chácaras Ceres, Suzano - SP, 08655-255</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/icarestaurante</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJbzGqHDFYzpQR2Kw1Tf1PtzM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyX3XVocoL6AVVgE5iQ4qDwQ4eY0TuraszgiQpT8CrICOAJ-nCNP7XD8NIK0f0GTkSEO_HKjUrjixTT3PddG_DoLFsthsVi4A6ghKgT2J2mLHVtMB7Ng3QhT_KsC6dFzS5hAobi-UebYFI&#x3D;w900-h900-p-k-no" alt="ICI Bistrô logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>ICI Bistrô</b>
+                <small>4.6 ⭐ (1450 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Mato Grosso, 396 - Consolação, São Paulo - SP, 01239-040</span><br />
+              <span class="restaurant-description">★★★★★ · Bistrô</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJeTLzx_KKxZQR-R-yS9oViK0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNeuE6KKc0OrbJVgNahaSoAQqGXx1pa4N_c1re_&#x3D;w900-h900-p-k-no" alt="Igor´s Costela logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Igor´s Costela</b>
+                <small>4.5 ⭐ (1488 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Praça Nova York, 50 - Jardim America, Sorocaba - SP, 18046-775</span><br />
+              <span class="restaurant-description">★★★★★ · Churrascaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/igors_costela</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJN7_n-oDxXpMRPAR70WAst4o" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPd0xbe-M2OMifIO4uoBNzKn2_LJg7Bmd7gHNyu&#x3D;w900-h900-p-k-no" alt="IL Caffè Encontros e Sabores Bueno logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>IL Caffè Encontros e Sabores Bueno</b>
+                <small>4.6 ⭐ (25 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. T-15, 61 - St. Bueno, Goiânia - GO, 74230-010</span><br />
+              <span class="restaurant-description">★★★★★ · Cafeteria</span><br />
+               
+              <span class="restaurant-website">🌐 https://wa.me/message/XMRQAEMEVAJSD1</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJQXtba4I-J5URkyVtcwIM77M" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.415296&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;client&#x3D;google-maps-frontend&amp;signature&#x3D;dhnYC8sL2lpIGhMDqMCq7ugXR7c" alt="Ilha Formosa - Pastéis, Pratos à La Carte, Sequência de Camarão e Petiscos logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Ilha Formosa - Pastéis, Pratos à La Carte, Sequência de Camarão e Petiscos</b>
+                <small>4.6 ⭐ (3150 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. das Rendeiras, 1956 - Lagoa da Conceição, Florianópolis - SC, 88062-400</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJxZ9ZqTOLxZQRQEkPjFlpTrU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid&#x3D;nzBcQyO5LA3h5Et2bXd5aQ&amp;cb_client&#x3D;search.gws-prod.gps&amp;w&#x3D;900&amp;h&#x3D;900&amp;yaw&#x3D;164.7899&amp;pitch&#x3D;0&amp;thumbfov&#x3D;100" alt="Imperador Lanches. logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Imperador Lanches.</b>
+                <small>5 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Carmo Brenga, 127 - Júlio de Mesquita Filho, Sorocaba - SP, 18053-050</span><br />
+              <span class="restaurant-description">★★★★★ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ-3INCac5z5QRl2lsGa7k7KQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNfTBMeYVLJfipI_iSvFHikiA5Dsj5Wb_SALw&#x3D;w900-h900-p-k-no" alt="Império da Pizza logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Império da Pizza</b>
+                <small>4.3 ⭐ (92 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua China, 386 - Vilarejo, Cabreúva - SP, 13318-000</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ-4a2n13MxZQRDnkLxTnvDhw" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzczGkjYgDYifztVz2FZvOQJoukTFGq4XcVY78bryFK6yKiDdXMWxmghkVn3S5aF5BoePOz0VgL50N8HcJwHI7MpPEmAiHC6d63q5Myk4PFVDRycHOAVMAGyPoFOhzRVxmlwdhl&#x3D;w900-h900-p-k-no" alt="Império da Pizza I Pizzaria I Itapetininga logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Império da Pizza I Pizzaria I Itapetininga</b>
+                <small>4.3 ⭐ (249 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Wenceslau Braz, 125 - Vila Popular, Itapetininga - SP, 18213-170</span><br />
+              <span class="restaurant-description">★★★★☆ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJlxH2zGr1xZQR3KVo08gSe9Y" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMnmPIsiZzpVAJK2cg8YZO9mjY9GadVZcmUQLZ6&#x3D;w900-h900-p-k-no" alt="IMPÉRIO LANCHONETE logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>IMPÉRIO LANCHONETE</b>
+                <small>3 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Prof Horácio Blazeck (8), 122, Sorocaba - SP, 18079-728</span><br />
+              <span class="restaurant-description">★★★☆☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJi_S1TNmLxZQRKPJYqKy5jWA" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipO_pyXE4-0_3GlFU4YqmXfiApUFPRQJXd99TVQS&#x3D;w900-h900-p-k-no" alt="Inês Comida Caseira logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Inês Comida Caseira</b>
+                <small>4.8 ⭐ (26 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Barão de Piratininga, 304 - Jardim Faculdade, Sorocaba - SP, 18030-160</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://inescomidacaseira.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJvfaOYWuKxZQR2O8ploLNNpk" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMb5P8WHkAwBoEb-hHD4uEPf8FWezwgdXFCgC1P&#x3D;w900-h900-p-k-no" alt="Ingou&#x27;s Pizzaria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Ingou&#x27;s Pizzaria</b>
+                <small>4.5 ⭐ (1475 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Matheus Conegero, 312 - Parque Bela Vista, Votorantim - SP, 18110-570</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/ingouspizzaria?igsh&#x3D;bDk3dTUyMjlseXU4&amp;utm_source&#x3D;qr</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJuwraahVXzpQRkgOCVvrTftc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNsMGus_L70EuKTyQwGsCUn1pFt-wimkVp2wkPm&#x3D;w900-h900-p-k-no" alt="Instituto Pizza logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Instituto Pizza</b>
+                <small>4.7 ⭐ (113 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Iquiririm, 953a - Vila Indiana, São Paulo - SP, 05586-001</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.institutopizza.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJT60As8j0xZQRZgKSUHmi3PE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzzkmHjVM2ci4NzCkFXL6-hhzicfjFHHPd928FTRo7P7fLAijn9ROIPis6cIMjzE8B6-5oq5ORAVjBBdB9ar9CoqBSfuj6fGm1KBoExVKdOrL1sTkWxEk8o2u31Nm7G4Px36Kw&#x3D;w900-h900-p-k-no" alt="Isso é Pizza Delivery logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Isso é Pizza Delivery</b>
+                <small>4.5 ⭐ (12 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Pedro Bifano, 53 - Ipiranga, Sorocaba - SP, 18053-500</span><br />
+              <span class="restaurant-description">★★★★★ · Delivery de Pizza</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJEcxkSIjMxZQRCPziB-Xxxus" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMrLStFq86SymARUnit0L9WfEsiXFkSeCqMBcve&#x3D;w900-h900-p-k-no" alt="Itapê Pizza Pizzaria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Itapê Pizza Pizzaria</b>
+                <small>4.5 ⭐ (579 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Cap. José Leme, 773 - Centro, Itapetininga - SP, 18200-290</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJo23FtAZfz5QRUd7PgaWkWg8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOVzX1-Mdqgwd_Dzi7aAEII2o6rw3B1ptEyJT48&#x3D;w900-h900-p-k-no" alt="Pizzaria Iguatemi logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Iguatemi</b>
+                <small>4.5 ⭐ (446 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Atendimento Online c, R. Araraquara, 407 - Jardim Leocadia, Sorocaba - SP, 18085-470</span><br />
+              <span class="restaurant-description">★★★★★ · Pizzaria</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ0yEtcpGzGgcR24igv9GtQRQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOiFdEIZG9AmnKbYdUCp4njJQNCyhn23Z8KhL6T&#x3D;w900-h900-p-k-no" alt="Pizzaria Império logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Império</b>
+                <small>2.8 ⭐ (24 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Laudelino Freire, 179 - Cidade Nova, Aracaju - SE, 49070-260</span><br />
+              <span class="restaurant-description">★★★☆☆ · Lanchonete</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJuYmeTBj0xZQRTFh1NIjj5lE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSybALPDCp4HyB3yGqDL5z8XIVPh5-6FOKUPPHEvkxbYfudgbnr1-XF6bDL-u07K-aq9X5D2ybdWroJ7hQguxLkdlKSiU9wTWAnaIwl2PQzh3XdSz601saxPk6sI5mxCYqOnEn2jFA&#x3D;w900-h900-p-k-no" alt="RESTAURANTE IMPÉRIO REFEIÇÕES - DISK MARMITEX logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>RESTAURANTE IMPÉRIO REFEIÇÕES - DISK MARMITEX</b>
+                <small>4 ⭐ (87 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Roque Nunes, 555 - Parque São Bento, Sorocaba - SP, 18072-660</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/imperio.refeicoes?igshid&#x3D;OGQ5ZDc2ODk2ZA&#x3D;&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJAQAkYvf0xZQRrnmwILgNIyQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN31zFXZdA1wmcmxmkTi4LK2bnC5_TSnmhABzHS&#x3D;w900-h900-p-k-no" alt="Restaurante Ipanema logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Ipanema</b>
+                <small>4.3 ⭐ (507 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Martina Ruiz Crespo, 40 - Jardim Nova Ipanema, Sorocaba - SP, 18071-020</span><br />
+              <span class="restaurant-description">★★★★☆ · Restaurante</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJQX6pYIP7zZQRREE5GuDLKuo" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMPY_Vw1dAYNrpt1KB4szRkNHdaJbbfdVBeRCwq&#x3D;w900-h900-p-k-no" alt="Restaurante Isa logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Restaurante Isa</b>
+                <small>4.5 ⭐ (2194 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Anchieta, 708 - Centro, Bertioga - SP, 11250-039</span><br />
+              <span class="restaurant-description">★★★★★ · Restaurante self-service</span><br />
+               
+              <span class="restaurant-website">🌐 http://www.restauranteisa.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>
