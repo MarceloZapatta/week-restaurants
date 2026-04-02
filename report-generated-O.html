@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes da semana O</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.restaurant-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.restaurant-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #f3f3f3;
+        border-radius: 6px;
+        padding: 12px;
+      }
+      ul.restaurant-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+        max-height: 277px;
+      }
+      ul.restaurant-list .restaurant-name {
+        font-size: 1.2em;
+        color: #222;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.restaurant-list .restaurant-container {
+        width: 130%;
+      }
+
+      ul.restaurant-list .restaurant-container span {
+        padding: 5px;
+      }
+
+      .toggle-hours-btn {
+        margin: 8px 0 8px 0;
+        padding: 7px 22px;
+        font-size: 1em;
+        background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        outline: none;
+      }
+      .toggle-hours-btn:hover,
+      .toggle-hours-btn:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+        color: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurantes da semana!<br />Letra: 'O'</h1>
+      <ul class="restaurant-list">
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJu1g5_U2LxZQR2okNQAIQf7E" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Bar do Osmar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Bar do Osmar</b>
+                <small>4.4 ⭐ (7 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Lamartine Babo, 316 - Júlio de Mesquita Filho, Sorocaba - SP, 18053-070</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJE_SKSraKxZQRzEb9C95Kkrc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Café Opção logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Café Opção</b>
+                <small> ⭐ ( avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Dr. Virgílio de Melo Franco, 303 - Trujilo, Sorocaba - SP, 33400-000</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJh3JAYnB6zpQRfoN6EEj8KL8" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O Bar Cervejaria e Grill logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O Bar Cervejaria e Grill</b>
+                <small>4.3 ⭐ (1639 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Sete de Setembro, 226 - Centro, Suzano - SP, 08674-205</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJtyxYKANgz5QRTUtJqZ-ZODg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O BRETÃO PUB logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O BRETÃO PUB</b>
+                <small>4.8 ⭐ (774 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Pereira da Silva, 900 - Jardim Santa Rosália, Sorocaba - SP, 18095-340</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://bretao.pub/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJIZmKfIGLxZQRp7gU0KCcD7k" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O Cafeeiro Coffee House logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O Cafeeiro Coffee House</b>
+                <small>5 ⭐ (20 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Octaviano Gozzano, 179 - Parque Campolim, Sorocaba - SP, 18048-100</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/sigaocafeeiro/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJrYOxvGfj3JQRwUYFQlgkzGs" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O Portão logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O Portão</b>
+                <small>4.6 ⭐ (625 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Augusto de Mari, 4069 - Portão, Curitiba - PR, 80610-180</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://m.facebook.com/O-Portao-Bar-e-Petiscaria-826244177403754/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJx3-I9RFgz5QRVfdWjMqOmbY" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O Rei do Pernil logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O Rei do Pernil</b>
+                <small>4.4 ⭐ (174 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Eng. Carlos Reinaldo Mendes, 1085 - Além Ponte, Sorocaba - SP, 18013-280</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJveajloL1xZQRXCmDu5CLql0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="O Tropeiro Lanches logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>O Tropeiro Lanches</b>
+                <small>4.7 ⭐ (3 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Ipanema, 904 - Vila Nova Sorocaba, Sorocaba - SP, 18070-671</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ_W8o-831xZQR1arsTzn45KE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="OBA Lanches -------------- Restaurante logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>OBA Lanches -------------- Restaurante</b>
+                <small>5 ⭐ (1 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Itavuvu, 1581 - Vila carol, Sorocaba - SP, 18076-005</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ5Xk9HlD1xZQR2lOsNekUFIg" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Oba Oba bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Oba Oba bar</b>
+                <small>4.8 ⭐ (11 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Paes de Linhares, 1285 - Vila Fiori, Sorocaba - SP, 18075-630</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://m.facebook.com/obaobabarassados/?ref&#x3D;bookmarks</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJHym4KhH1xZQR_22nQVWRtgM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Obahh Pizza logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Obahh Pizza</b>
+                <small>5 ⭐ (42 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Gervásio Porfírio do Nascimento, 215 - Ipanema Ville, Sorocaba - SP, 18073-420</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJ6wtgRQd_mQARohK-eXj3-sU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="OBAR logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>OBAR</b>
+                <small>4.4 ⭐ (688 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Alm. João Cândido Brasil, 35 - Tijuca, Rio de Janeiro - RJ, 20511-020</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/obar.rj/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJHWJPKTz_zpQRwnN5WDs4NOQ" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="OFF BAR logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>OFF BAR</b>
+                <small>4.2 ⭐ (569 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. São Maurício, 451 - Km 18, Osasco - SP, 06110-250</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/off.bar?igshid&#x3D;YmMyMTA2M2Y&#x3D;</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJhWwd_8KKxZQR88V07BnjEII" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Oficina Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Oficina Bar</b>
+                <small>4.5 ⭐ (51 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Rocha Pombo, 449 - Vila Jardini, Sorocaba - SP, 18044-030</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJu595OgD1xZQRKrYCcJEMfmM" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="OHKFÉ CAFE logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>OHKFÉ CAFE</b>
+                <small> ⭐ ( avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Edward Fru Fru Marciano da Silva, 361 - Jardim Sao Guilherme, Sorocaba - SP, 18074-621</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJz20O_9L1xZQRgo-Ob-eTc5Q" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="OHKFÉ Cafeteria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>OHKFÉ Cafeteria</b>
+                <small>5 ⭐ (43 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Edward Fru Fru Marciano da Silva, 327 - Jardim Sao Guilherme, Sorocaba - SP, 18074-621</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJh_YfG6WKxZQRqZ3d5gHPkhE" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Old kick Kustom bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Old kick Kustom bar</b>
+                <small>4.7 ⭐ (1404 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Rua Comendador Hermelino Matarzzo, R. Moacyr Figueira, 52 - Vila Santa Rita, Sorocaba - SP, 18080-100</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 http://oldkick.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJB20V8rZhz5QRB9qa_Ct-Pj4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Old Tripper Garage Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Old Tripper Garage Bar</b>
+                <small>4.8 ⭐ (67 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Pedro Luís Pieroni, 230 - Além Ponte, Sorocaba - SP, 18013-300</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.instagram.com/old.tripper.brasil?r&#x3D;nametag</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJOf2awONfz5QReevNQQyQEkk" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Olga Burger logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Olga Burger</b>
+                <small>4.5 ⭐ (157 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. São Paulo, 4525 Shopping - Granja Olga, Sorocaba - SP, 18013-004</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJhYo5YXUG2YgR1-MUwQC996s" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Olli Olive Pizza logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Olli Olive Pizza</b>
+                <small>4.9 ⭐ (694 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 4599 N University Dr, Lauderhill, FL 33351, Estados Unidos</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 http://olliolive.com/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJD6gIa431xZQREI20eTWFZd0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Open Bar logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Open Bar</b>
+                <small>4.5 ⭐ (10 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Manoel Peres, n°522 - Parque das Laranjeiras, Sorocaba - SP, 18077-380</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJU6dlI5eLxZQRytVcK079lL0" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Open Square Campolim logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Open Square Campolim</b>
+                <small>4.9 ⭐ (8 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Antônio Perez Hernandez, 720 - Parque Campolim, Sorocaba - SP, 18048-115</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 http://beacons.ai/opensquarecampolim</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJNSc9eeCLxZQR2hGMcp8tW4w" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Oporto Restaurante Português logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Oporto Restaurante Português</b>
+                <small>4.1 ⭐ (271 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Gustavo Teixeira, 540 - Vila Independencia, Sorocaba - SP, 18040-323</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+                
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJyYanq5yLxZQReV1AmHqCssc" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Oui!Chocolat Café &amp; Doceria logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Oui!Chocolat Café &amp; Doceria</b>
+                <small>4.5 ⭐ (733 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 R. Profᵃ Beatriz de Moraes L. Fogaça, 70 - Jardim Paulistano, Sorocaba - SP, 18040-840</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://instagram.com/ouichocolat</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJC9OtzWiKxZQRsRLZciFmMnU" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Outback Steakhouse logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Outback Steakhouse</b>
+                <small>4.7 ⭐ (8641 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Gisele Constantino, 1850 - Parque Bela Vista, Votorantim - SP, 18110-902</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.outback.com.br/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJpSNOEAIKlVQRMSxrrUg32Y4" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Oven and Shaker logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Oven and Shaker</b>
+                <small>4.4 ⭐ (1541 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 1134 NW Everett St, Portland, OR 97209, Estados Unidos</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://www.ovenandshaker.com/</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.google.com/maps/place/?q&#x3D;place_id:ChIJaTbhM6n1xZQR2d6lxXY3-Fs" target="_blank" rel="noopener noreferrer">
+          <li>
+            <img src="https://maps.google.com/maps/api/staticmap?center&#x3D;-23.4979328%2C-47.4251264&amp;zoom&#x3D;14&amp;size&#x3D;900x900&amp;language&#x3D;en&amp;sensor&#x3D;false&amp;key&#x3D;AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&amp;signature&#x3D;da4mlVkkh47MaNikG9AQgPZS6QQ" alt="Pizzaria Original Gourmet - Delivery e Retirada logo" />
+            <div class="restaurant-container">
+              <span class="restaurant-name"
+                ><b>Pizzaria Original Gourmet - Delivery e Retirada</b>
+                <small>4.8 ⭐ (210 avaliações)</small></span
+              ><br />
+              <span class="restaurant-address">📍 Av. Elias Maluf, 1278 - Parque Ouro Fino, Sorocaba - SP, 18055-215</span><br />
+              <span class="restaurant-description">Find local businesses, view maps and get driving directions in Google Maps.</span><br />
+               
+              <span class="restaurant-website">🌐 https://app.cardapioweb.com/pizzaria_originalgourmet?s&#x3D;gmn</span><br />
+               
+              <small class="restaurant-hours">
+                Dom: <br />
+                Seg: <br />
+                Ter: <br />
+                Qua: <br />
+                Qui: <br />
+                Sex: <br />
+                Sab: <br />
+              </small>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+</html>
