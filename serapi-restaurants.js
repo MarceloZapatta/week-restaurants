@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 const CURRENT_LETTER = process.env.CURRENT_LETTER.toLowerCase();
 
 const BASE_URL = "https://serpapi.com/search.json?engine=google_maps&q= ";
-const END_URL = `*&ll=@-23.4900044,-47.4527187,13.51z&type=search&gl=br&hl=pt-br&lr=lang_pt&num=1000&api_key=${process.env.SERAPI_KEY}`;
+const END_URL = `&ll=@-23.5057527,-47.4631686,13z&type=search&gl=br&hl=pt-br&nearby=false&lr=lang_pt&num=1000&api_key=${process.env.SERAPI_KEY}`;
 
 const PLACES_TYPES = ["lanchonete", "bar", "restaurante", "cafe", "pizzaria"];
 
@@ -20,6 +20,7 @@ const CSV_HEADER = [
   "website",
   "description",
   "place_id",
+  "thumbnail"
 ].join(";");
 
 function escapeCsv(val) {
@@ -46,7 +47,7 @@ async function fetchAllResults(type) {
     url =
       data.serpapi_pagination && data.serpapi_pagination.next
         ? data.serpapi_pagination.next +
-          "&api_key=d3429c2f9e8f1ac67aa514197b58df0cda55d35b956f0dcdc9900c4dd64ecc8a"
+          "&api_key=" + process.env.SERAPI_KEY
         : null;
     page++;
   }
@@ -65,6 +66,7 @@ function toCsvRow(obj) {
     escapeCsv(obj.website),
     escapeCsv(obj.description),
     escapeCsv(obj.place_id),
+    escapeCsv(obj.thumbnail)
   ].join(";");
 }
 
@@ -73,6 +75,11 @@ async function main() {
     const results = await fetchAllResults(type);
     const lines = [CSV_HEADER];
     for (const r of results) {
+      if (!r.address.includes('Sorocaba')) {
+        console.log(`Skipping ${r.title} because it's not in Sorocaba (${r.address})`);
+        continue;
+      }
+
       lines.push(toCsvRow(r));
     }
 

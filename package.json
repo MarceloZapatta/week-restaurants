@@ -6,6 +6,7 @@
     "metascraper": "^5.49.4",
     "metascraper-description": "^5.49.2",
     "metascraper-image": "^5.49.2",
+    "metascraper-logo": "^5.50.1",
     "node-fetch": "^2.7.0",
     "puppeteer": "^24.22.3"
   }

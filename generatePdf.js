@@ -132,13 +132,14 @@ async function main() {
   for (const row of unique) {
     const name = row.title;
     const link =
-      "https://www.google.com/maps/place/?q=place_id:" + row.place_id;
+      "https://www.google.com/maps/search/?api=1&query=Google&query_place_id=" + row.place_id;
     const meta = await getMetadata(link);
     const rating = row.rating;
     const reviews = row.reviews;
     const address = row.address;
     const hours = row.openning_hours ? JSON.parse(row.openning_hours) : null;
     const website = row.website;
+    const thumbnail = row.thumbnail;
     console.log(`Fetched metadata for ${name} (${link})`);
     restaurants.push({
       name,
@@ -148,14 +149,20 @@ async function main() {
       address,
       hours,
       website,
-      ...meta,
+      description: meta.description,
+      image: thumbnail,
     });
   }
 
   // Sort restaurants alphabetically by name (ignoring case)
-  restaurants.sort((a, b) =>
-    a.name.localeCompare(b.name, undefined, { sensitivity: "base" })
-  );
+  restaurants.sort((a, b) => {
+    const scoreA = a.rating * Math.log(1 + a.reviews);
+    const scoreB = b.rating * Math.log(1 + b.reviews);
+    if (scoreA === scoreB) {
+      return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+    }
+    return scoreB - scoreA; // Sort by score descending
+  });
 
   // Read and compile Handlebars template
   const templateContent = fs.readFileSync(htmlTemplatePath, "utf8");
