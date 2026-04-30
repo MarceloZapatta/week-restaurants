@@ -17,7 +17,7 @@ const metascraper = require("metascraper")([
 const CURRENT_LETTER = process.env.CURRENT_LETTER.toUpperCase();
 const csvPath = path.join(
   __dirname,
-  `letters/${CURRENT_LETTER.toLowerCase()}/joined.csv`
+  `letters/${CURRENT_LETTER.toLowerCase()}/joined.csv`,
 );
 const htmlTemplatePath = path.join(__dirname, "report.html");
 
@@ -48,69 +48,38 @@ async function main() {
   // Filter by letter 'A' (ignoring 'Restaurante ' prefix)
   const filtered = records.filter((row) => {
     let name = row.title.trim();
-    if (name.toLowerCase().startsWith("pizzaria do ")) {
-      name = name.slice("pizzaria do ".length).trim();
+
+    const forbiddenWords = [
+      "pizzaria",
+      "restaurante",
+      "bar",
+      "café",
+      "cafe",
+      "cafeteria",
+      "padaria",
+      "panificadora",
+      "pastelaria",
+      "lanchonete",
+      "churrascaria",
+      "sorveteria",
+      "doceria",
+      "confeitaria",
+      "hamburgueria",
+      "sanduicheria",
+    ];
+
+    for (const word of forbiddenWords) {
+      if (name.toLowerCase().startsWith(word + " do ")) {
+        name = name.slice((word + " do ").length).trim();
+      } else if (name.toLowerCase().startsWith(word + " da ")) {
+        name = name.slice((word + " da ").length).trim();
+      } else if (name.toLowerCase().startsWith(word + " com ")) {
+        name = name.slice((word + " com ").length).trim();
+      } else if (name.toLowerCase().startsWith(word + " ")) {
+        name = name.slice((word + " ").length).trim();
+      }
     }
-    if (name.toLowerCase().startsWith("pizzaria da ")) {
-      name = name.slice("pizzaria da ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("pizzaria ")) {
-      name = name.slice("pizzaria ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("restaurante do ")) {
-      name = name.slice("restaurante do ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("restaurante da ")) {
-      name = name.slice("restaurante da ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("restaurante ")) {
-      name = name.slice("restaurante ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("bar do")) {
-      name = name.slice("bar do".length).trim();
-    }
-    if (name.toLowerCase().startsWith("bar da")) {
-      name = name.slice("bar da".length).trim();
-    }
-    if (name.toLowerCase().startsWith("bar ")) {
-      name = name.slice("bar ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("café do")) {
-      name = name.slice("café do".length).trim();
-    }
-    if (name.toLowerCase().startsWith("café da")) {
-      name = name.slice("café da".length).trim();
-    }
-    if (name.toLowerCase().startsWith("café com")) {
-      name = name.slice("café com".length).trim();
-    }
-    if (name.toLowerCase().startsWith("café ")) {
-      name = name.slice("café ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafe do")) {
-      name = name.slice("cafe do".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafe da")) {
-      name = name.slice("cafe da".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafe com")) {
-      name = name.slice("cafe com".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafe ")) {
-      name = name.slice("cafe ".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafeteria do")) {
-      name = name.slice("cafeteria do".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafeteria da")) {
-      name = name.slice("cafeteria da".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafeteria com")) {
-      name = name.slice("cafeteria com".length).trim();
-    }
-    if (name.toLowerCase().startsWith("cafeteria ")) {
-      name = name.slice("cafeteria ".length).trim();
-    }
+
     return name[0]?.toUpperCase() === CURRENT_LETTER;
   });
 
@@ -132,12 +101,27 @@ async function main() {
   for (const row of unique) {
     const name = row.title;
     const link =
-      "https://www.google.com/maps/search/?api=1&query=Google&query_place_id=" + row.place_id;
+      "https://www.google.com/maps/search/?api=1&query=Google&query_place_id=" +
+      row.place_id;
     const meta = await getMetadata(link);
     const rating = row.rating;
     const reviews = row.reviews;
     const address = row.address;
-    const hours = row.openning_hours ? JSON.parse(row.openning_hours) : null;
+    let parsedHours = row.openning_hours ? JSON.parse(row.openning_hours) : null;
+    let hours = null;
+
+    if (parsedHours) {
+      hours = {
+        sunday: parsedHours['domingo'] || parsedHours.sunday || "Fechado",
+        monday: parsedHours['segunda-feira'] || parsedHours.monday || "Fechado",
+        tuesday: parsedHours['terça-feira'] || parsedHours.tuesday || "Fechado",
+        wednesday: parsedHours['quarta-feira'] || parsedHours.wednesday || "Fechado",
+        thursday: parsedHours['quinta-feira'] || parsedHours.thursday || "Fechado",
+        friday: parsedHours['sexta-feira'] || parsedHours.friday || "Fechado",
+        saturday: parsedHours['sábado'] || parsedHours.saturday || "Fechado",
+      }
+    }
+
     const website = row.website;
     const thumbnail = row.thumbnail;
     console.log(`Fetched metadata for ${name} (${link})`);
