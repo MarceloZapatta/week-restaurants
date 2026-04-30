@@ -8,7 +8,22 @@ const CURRENT_LETTER = process.env.CURRENT_LETTER.toLowerCase();
 const BASE_URL = "https://serpapi.com/search.json?engine=google_maps&q= ";
 const END_URL = `&ll=@-23.5057527,-47.4631686,13z&type=search&gl=br&hl=pt-br&nearby=false&lr=lang_pt&num=1000&api_key=${process.env.SERAPI_KEY}`;
 
-const PLACES_TYPES = ["lanchonete", "bar", "restaurante", "cafe", "pizzaria"];
+const PLACES_TYPES = [
+  "lanchonete",
+  "bar",
+  "restaurante",
+  "cafe",
+  "pizzaria",
+  "peixaria",
+  "panificadora",
+  "padaria",
+  "pastelaria",
+  "churrascaria",
+  "sorveteria",
+  "doceria",
+  "hamburgueria",
+  "sanduicheria",
+];
 
 // CSV header (no quotes, ; separated)
 const CSV_HEADER = [
@@ -20,7 +35,7 @@ const CSV_HEADER = [
   "website",
   "description",
   "place_id",
-  "thumbnail"
+  "thumbnail",
 ].join(";");
 
 function escapeCsv(val) {
@@ -46,8 +61,7 @@ async function fetchAllResults(type) {
     // Pagination
     url =
       data.serpapi_pagination && data.serpapi_pagination.next
-        ? data.serpapi_pagination.next +
-          "&api_key=" + process.env.SERAPI_KEY
+        ? data.serpapi_pagination.next + "&api_key=" + process.env.SERAPI_KEY
         : null;
     page++;
   }
@@ -61,12 +75,12 @@ function toCsvRow(obj) {
     escapeCsv(obj.reviews),
     escapeCsv(obj.address),
     escapeCsv(
-      JSON.stringify(obj.operating_hours || obj.openning_hours || obj.hours)
+      JSON.stringify(obj.operating_hours || obj.openning_hours || obj.hours),
     ),
     escapeCsv(obj.website),
     escapeCsv(obj.description),
     escapeCsv(obj.place_id),
-    escapeCsv(obj.thumbnail)
+    escapeCsv(obj.thumbnail),
   ].join(";");
 }
 
@@ -75,8 +89,10 @@ async function main() {
     const results = await fetchAllResults(type);
     const lines = [CSV_HEADER];
     for (const r of results) {
-      if (!r.address.includes('Sorocaba')) {
-        console.log(`Skipping ${r.title} because it's not in Sorocaba (${r.address})`);
+      if (!r.address.includes("Sorocaba")) {
+        console.log(
+          `Skipping ${r.title} because it's not in Sorocaba (${r.address})`,
+        );
         continue;
       }
 
@@ -91,7 +107,7 @@ async function main() {
     fs.writeFileSync(
       `letters/${CURRENT_LETTER}/serapi-${type}.csv`,
       lines.join("\n"),
-      "utf8"
+      "utf8",
     );
     console.log(`Wrote ${results.length} rows to serapi-${type}.csv`);
   });
