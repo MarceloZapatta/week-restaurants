@@ -69,14 +69,12 @@ async function main() {
     ];
 
     for (const word of forbiddenWords) {
-      if (name.toLowerCase().startsWith(word + " do ")) {
-        name = name.slice((word + " do ").length).trim();
-      } else if (name.toLowerCase().startsWith(word + " da ")) {
-        name = name.slice((word + " da ").length).trim();
-      } else if (name.toLowerCase().startsWith(word + " com ")) {
-        name = name.slice((word + " com ").length).trim();
-      } else if (name.toLowerCase().startsWith(word + " ")) {
-        name = name.slice((word + " ").length).trim();
+      const sufixes = ["o", "a", "os", "as", "um", "uma", "uns", "umas", "do", "da", "dos", "das", "de", "com", "la", "le", "los", "les", "el", "la", "los", "las", " "];
+
+      for (const sufix of sufixes) {
+        if (name.toLowerCase().startsWith(word + " " + sufix + " ")) {
+          name = name.slice((word + " " + sufix + " ").length).trim();
+        }
       }
     }
 
