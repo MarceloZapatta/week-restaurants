@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm config set minimum-release-age 0
-          pnpm install
+          pnpm install --config.dangerouslyAllowAllBuilds=true
 
       - name: Install Puppeteer dependencies
         run: |
