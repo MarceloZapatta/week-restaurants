@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "csv-parse": "^6.1.0",
-    "dotenv": "^17.2.3",
-    "handlebars": "^4.7.8",
-    "metascraper": "^5.49.4",
-    "metascraper-description": "^5.49.2",
-    "metascraper-image": "^5.49.2",
-    "metascraper-logo": "^5.50.1",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
+    "handlebars": "^4.7.9",
+    "metascraper": "^5.51.1",
+    "metascraper-description": "^5.51.1",
+    "metascraper-image": "^5.51.1",
+    "metascraper-logo": "^5.51.1",
     "node-fetch": "^2.7.0",
-    "puppeteer": "^24.22.3"
+    "puppeteer": "^24.43.1"
   }
 }

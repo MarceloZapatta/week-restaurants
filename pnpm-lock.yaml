@@ -9,31 +9,31 @@ importers:
   .:
     dependencies:
       csv-parse:
-        specifier: ^6.1.0
+        specifier: ^6.2.1
         version: 6.2.1
       dotenv:
-        specifier: ^17.2.3
+        specifier: ^17.4.2
         version: 17.4.2
       handlebars:
-        specifier: ^4.7.8
+        specifier: ^4.7.9
         version: 4.7.9
       metascraper:
-        specifier: ^5.49.4
+        specifier: ^5.51.1
         version: 5.51.1(debug@4.4.3)
       metascraper-description:
-        specifier: ^5.49.2
+        specifier: ^5.51.1
         version: 5.51.1(debug@4.4.3)
       metascraper-image:
-        specifier: ^5.49.2
+        specifier: ^5.51.1
         version: 5.51.1(debug@4.4.3)
       metascraper-logo:
-        specifier: ^5.50.1
+        specifier: ^5.51.1
         version: 5.51.1(debug@4.4.3)
       node-fetch:
         specifier: ^2.7.0
         version: 2.7.0
       puppeteer:
-        specifier: ^24.22.3
+        specifier: ^24.43.1
         version: 24.43.1
 
 packages:
