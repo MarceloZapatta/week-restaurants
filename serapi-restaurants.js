@@ -52,7 +52,7 @@ async function fetchAllResults(type) {
   let page = 1;
   while (url) {
     console.log(`Fetching page ${page}...`);
-    const res = await fetch(url);
+    const res = await fetch(url, { compress: false });
     if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
     const data = await res.json();
     if (Array.isArray(data.local_results)) {
