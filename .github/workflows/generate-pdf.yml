@@ -27,7 +27,9 @@ jobs:
           version: latest
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          pnpm config set minimum-release-age 0
+          pnpm install
 
       - name: Install Puppeteer dependencies
         run: |
