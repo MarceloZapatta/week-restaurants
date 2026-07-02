@@ -101,7 +101,7 @@ async function main() {
     const results = await fetchAllResultsWithRetry(type);
     const lines = [CSV_HEADER];
     for (const r of results) {
-      if (!r.address.includes("Sorocaba")) {
+      if (!r.address || !r.address.includes("Sorocaba")) {
         console.log(
           `Skipping ${r.title} because it's not in Sorocaba (${r.address})`,
         );
