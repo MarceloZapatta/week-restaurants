@@ -84,9 +84,21 @@ function toCsvRow(obj) {
   ].join(";");
 }
 
+async function fetchAllResultsWithRetry(type, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await fetchAllResults(type);
+    } catch (e) {
+      if (i === retries - 1) throw e;
+      console.log(`Retrying ${type} (attempt ${i + 2})...`);
+      await new Promise((r) => setTimeout(r, 2000 * (i + 1)));
+    }
+  }
+}
+
 async function main() {
-  PLACES_TYPES.forEach(async (type) => {
-    const results = await fetchAllResults(type);
+  for (const type of PLACES_TYPES) {
+    const results = await fetchAllResultsWithRetry(type);
     const lines = [CSV_HEADER];
     for (const r of results) {
       if (!r.address.includes("Sorocaba")) {
@@ -110,7 +122,7 @@ async function main() {
       "utf8",
     );
     console.log(`Wrote ${results.length} rows to serapi-${type}.csv`);
-  });
+  }
 }
 
 main().catch((e) => {
