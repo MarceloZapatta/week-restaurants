@@ -1,0 +1,51 @@
+name: Generate PDF Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      current_letter:
+        description: 'Letter to generate the report for (e.g. A, B, C...)'
+        required: true
+        type: string
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Puppeteer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 \
+            libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 \
+            libxfixes3 libxrandr2 libgbm1 libasound2t64
+
+      - name: Create .env file
+        run: |
+          echo "CURRENT_LETTER=${{ github.event.inputs.current_letter }}" >> .env
+          echo "SERAPI_KEY=${{ secrets.SERAPI_KEY }}" >> .env
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run generate-pdf script
+        run: bash generate-pdf.sh
