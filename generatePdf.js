@@ -66,6 +66,11 @@ async function main() {
       "confeitaria",
       "hamburgueria",
       "sanduicheria",
+      "el",
+      "la",
+      "lo",
+      "los",
+      "les",
     ];
 
     for (const word of forbiddenWords) {
