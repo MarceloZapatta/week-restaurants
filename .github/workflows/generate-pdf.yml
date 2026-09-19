@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm config set minimum-release-age 0
-          pnpm install --config.dangerouslyAllowAllBuilds=true
+          pnpm install --frozen-lockfile
 
       - name: Install Puppeteer dependencies
         run: |
